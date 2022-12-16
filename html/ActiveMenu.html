@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            ;
+        }
+
+        header {
+            padding: 30px 20px;
+            background-color: aliceblue;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1111;
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 5px;
+            transition: all linear 0.5s;
+            margin-right: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            padding: 5px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            opacity: 0.8;
+            color: white;
+            text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #item1 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1500417148159-68083bd7333a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") no-repeat center center /cover;
+        }
+
+        #item2 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1492896864827-5fc3ef540db6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center /cover;
+        }
+
+        #item3 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1510908072721-6fbd31199630?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center /cover;
+        }
+
+        #item4 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1506899686410-4670690fccef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1975&q=80") no-repeat center center /cover;
+        }
+
+        #item5 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1664574654578-d5a6a4f447bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center center /cover;
+        }
+
+        #item6 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("  https://images.unsplash.com/photo-1527488982891-99714e169214?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1183&q=80") no-repeat center center /cover;
+        }
+
+        .active {
+            background-color: azure;
+            display: inline-block;
+            border-bottom: 5px solid #2a2b2c;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body onload="activeMenu()">
+    <header>
+        <div class="container">
+            <div class="main-head">
+                <h1>Logo</h1>
+                <nav class="nav">
+                    <ul class="top-menu">
+                        <li class="links"><a href="#item1">Item1</a></li>
+                        <li class="links"><a href="#item2">Item2</a></li>
+                        <li class="links"><a href="#item3">Item3</a></li>
+                        <li class="links"><a href="#item4">Item4</a></li>
+                        <li class="links"><a href="#item5">Item5</a></li>
+                        <li class="links"><a href="#item6">Item6</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <section id="item1">
+        <h1>Section 1</h1>
+    </section>
+    <section id="item2">
+        <h1>Section 2</h1>
+    </section>
+    <section id="item3">
+        <h1>Section 3</h1>
+    </section>
+    <section id="item4">
+        <h1>Section 4</h1>
+    </section>
+    <section id="item5">
+        <h1>Section 5</h1>
+    </section>
+    <section id="item6">
+        <h1>Section 6</h1>
+    </section>
+    <script defer src="/resource/js/myScript.js">
+    </script>
+
+</html>
