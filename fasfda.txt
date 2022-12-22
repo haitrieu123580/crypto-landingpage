@@ -1,0 +1,157 @@
+ /* responsive header */
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+
+            .menu__navbar,
+            .menu__action {
+                display: none;
+            }
+           
+            .menu-warp,.mobile__nav__toggler{
+                width: 50%;
+              
+            }
+            .mobile__nav__toggler{
+                display: flex;
+                justify-content: flex-end;
+                font-size: 30px;
+            }
+            .row{
+                padding: 0 15px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+
+            .menu__navbar,.head__lang,.lang__list,.lang a{
+                display: none;
+            }
+
+            .head__lang li ul{
+                display: none;
+            }
+            .row{
+                padding: 0 15px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            .menu-warp{
+                width: 90%;
+                margin: 0;
+            }
+            .menu-warp nav{
+                width: 100%;
+                justify-content: space-between;
+            }
+            .mobile__nav__toggler{
+                width: 10%;
+                display: flex;
+                font-size: 30px;
+                justify-content: end;
+            }
+    
+        }
+
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .row{
+                padding: 0;
+                width: 100%;
+            }
+            .menu-warp{
+                width: 100%;
+                justify-content: start;
+            }
+            .mobile__nav__toggler{
+                display: none;
+            }
+            .menu__navbar{
+                width: 70%;
+                display: inline-block;
+            }
+            .section-link{
+                font-size: 14px;
+            }
+            .menu__logo{
+                width: 10%;
+            }
+            .menu__action{
+                width: 20%;
+            }
+            .head__lang{
+                display: none;
+            }
+            /* .head__btn{
+                position: relative;
+                top: 20px;
+            } */
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .mobile__nav__toggler{
+                display: none;
+            }
+        
+            .menu__navbar,
+            .menu__action ul .head__lang{
+                display: inline-block;
+            }
+            .head__lang{
+                display: inline-block;
+            }
+            .head__lang li ul{
+                display: block;
+            }
+            .head__lang,.lang__list,.lang a{
+                display: none;
+            }
+            /* cmt */
+            .head__lang::before{
+                content: "ENG";
+            }
+            .head__lang::after{
+                content: "\f107";
+                display: inline-block;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+                color: #00C4F4;
+                margin-left: 1%;
+            }
+            .row{
+                font-size: 16px;
+                padding: 0 15px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            .menu-warp nav{
+                width: 100%;
+                justify-content: space-between;
+                margin: 0 5%;
+            }
+            .menu__logo{
+                width: 10%;
+            }
+            .menu__navbar{
+                
+                width: 60%;
+                margin-left: 0;
+            }
+            .menu__action{
+                width: 20%;
+                justify-content: flex-end;
+            }
+            .head__lang{
+                width: 40%;
+            }
+            .head__btn{
+                width: 60%;
+        
+            }
+        }
