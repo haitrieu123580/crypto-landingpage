@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/resource/css/style.css"> -->
-    <link rel="stylesheet" href="/resource/css/navbar.css">
+    <link rel="stylesheet" href="/resource/css/style.css">
+    <link rel="stylesheet" href="/resource/css/responsive.css">
+    <link rel="stylesheet" href="/resource/css/section1.css">
+    <link rel="stylesheet" href="/resource/css/section1_res.css">
     <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
     <title>Bigtech</title>
     <style>
@@ -18,15 +20,14 @@
 <body>
     <!-- header area -->
     <header>
-        <div class="row">
-            <div class="mobile__nav__toggler">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        <div class="row">   
             <div class="menu-warp">
                 <nav>
+                    <!-- logo 1 -->
                     <div class="menu__logo">
                         <img src="/resource/img/logo.png" alt="">
                     </div>
+                    <!-- main menu -->
                     <div class="menu__navbar">
                         <ul class="navigation">
                             <li><a href="#home" class="section-link">HOME</a></li>
@@ -37,6 +38,7 @@
                             <li><a href="#contact" class="section-link">CONTACT US</a></li>
                         </ul>
                     </div>
+                    <!-- action menu -->
                     <div class="menu__action">
                         <ul>
                             <li class="head__lang"> 
@@ -52,10 +54,91 @@
                     </div>
                 </nav>
             </div>
-            <div class="menu__mobile"></div>
+            <!-- mobile menu icon and vertical menu -->
+            <div class="mobile__nav__toggler">
+                <i class="fa-solid fa-bars"></i>
+                <div class="menu__mobile">
+                    <nav class="menu-box">
+                        <div class="box__btn">
+                            <i class="fa-solid fa-times" style="color: #00c4f4;"></i>
+                        </div>
+
+                        <div class="box__logo">
+                            <img src="/resource/img/logo.png" alt="">
+                        </div>
+                        <div class="vertical-menu">
+                            <ul class="box__navigation">
+                                <li><a href="#home" class="section-link">HOME</a></li>
+                                <li><a href="#about" class="section-link">ABOUT US</a></li>
+                                <li><a href="#sales" class="section-link">SALES</a></li>
+                                <li><a href="#roadmap" class="section-link">ROADMAP</a></li>
+                                <li><a href="#blog" class="section-link">BLOG</a></li>
+                                <li><a href="#contact" class="section-link">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="social-menu">
+                            <ul class="social-list">
+                                <li class="social-links"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social-links"><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li class="social-links"><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li class="social-links"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="social-links"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- filter background -->
+                    </nav>
+                </div>
+            </div>
         </div>
+        
     </header>
     <!-- header-area-end -->
+    <!-- section 01 -->
+    <section id="home" class="banner-home">
+        <div class="container">
+            <div class="banner-shape">
+                <img src="/resource/img/banner_shape01.png" alt="" class="shape1">
+                <img src="/resource/img/banner_shape02.png" alt="" class="shape2">
+                <img src="/resource/img/banner_shape03.png" alt="" class="shape3">
+            </div>
+            <div class="section-container">
+                <div class="banner-content">
+                    <img src="/resource/img/fire.png" alt="" class="img--fire">
+                    <h2>Join Future Of Algorithmic <span style="color: #00c4f4;">Crypto</span>
+                    Trading Strategies</h2>
+                </div>
+                <div class="banner-progress">
+                    <ul class="progress">
+                        <li class="progress__name progress__name--blue">PRE SELL</li>
+                        <li class="progress__name progress__name--yellow">SOFT CAP</li>
+                        <li class="progress__name progress__name--green">BONUS</li>
+                    </ul>
+                    <div class="progress__bar"></div>
+                    <h4 class="bar__description">65% TARGET RAISED<span>ETH = $1000 = 3177.38 CIC</span> </h4>
+                    
+                </div>
+                <div class="banner-countdown">
+                    <h2 class="countdown__title">ICO Will Start In..</h2>
+                    <div class="time-blocks">
+                        <div class="time day"><span>36</span>Day</div>
+                        <div class="time hour"><span>12</span>Hour</div>
+                        <div class="time minute"><span>13</span>Minute</div>
+                        <div class="time second"><span>14</span>Second</div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+       
+    </section>
+    <!-- section 02-->
+    <section id="about">
+        <div class="container">
+            <div class="corp__info"></div>
+            <div class="corp__partner"></div>
+            <div class="corp__choose"></div>
+        </div>
+    </section>
 </body>
 
 </html>

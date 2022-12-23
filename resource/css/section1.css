@@ -1,0 +1,286 @@
+:root {
+    --color-blue: #00c4f4;
+    --color-yellow:#FF9700;
+    --color-green:#12D176;
+    --color-red:#FF1D45;
+}
+
+.banner-home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0.23deg, #030B15 5.68%, rgba(3, 11, 21, 0.42) 81.9%);
+    z-index: -1;
+}
+
+#home {
+    position: relative;
+    background-image: url(/resource/img/banner_one.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 120px 0 0;
+    overflow: hidden;
+  
+}
+.banner-shape img{
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+}
+/* animation cho img */
+.shape1 {
+    top: 28%;
+    left: auto;
+    animation: moveRight 5s linear 0s infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        transform:translateX(0px);
+    }
+
+    50% {
+        transform:translateX(50px);
+    }
+
+    100% {
+        transform:translateX(0px);
+    }
+}
+
+.shape2 {
+    top: 20%;
+    right: 15%;
+}
+.shape3{
+    right: 0;
+    bottom: 0;
+    animation: moveUp 5s linear 0s infinite;
+}
+@keyframes moveUp {
+    0% {
+        transform:translateY(0px);
+    }
+
+    50% {
+        transform:translateY(50px);
+    }
+
+    100% {
+        transform:translateY(0px);
+    }
+}
+/* main container */
+.section-container,.banner-countdown{
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    /* *? can use? */
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-container *{
+    max-width: 100%;
+    margin: 0 2%;
+}
+/* banner title and progress bar */
+.banner-content img{
+    margin-bottom: 25px;
+}
+.banner-content{
+    text-align: center;
+
+}
+.banner-content span{
+    margin: 0;
+}
+.banner-content h2{
+    letter-spacing: -0.01em
+}
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+.progress__name{
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 600;
+    padding-bottom: 25px;
+    position: relative;
+}
+.progress__name::after{
+    content: " ";
+    width: 2px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.progress__name--blue{
+    color: var(--color-blue);
+}
+.progress__name--blue::after{
+    background-color: var(--color-blue);
+}
+.progress__name--yellow{
+    color: var(--color-yellow);
+}
+.progress__name--yellow::after{
+    background-color: var(--color-yellow);
+}
+.progress__name--green{
+    color: var(--color-green);
+}
+.progress__name--green::after{
+    background-color: var(--color-green);
+}
+.progress__bar{
+    height: 6px;
+    background-color: #F2F2F2;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    position: relative;
+}
+.progress__bar::before{
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 5;
+    border: 6px solid var(--color-blue);
+}
+.progress__bar::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 6px;
+    width: 80%;
+    font-size: .75rem;
+    transform: translateY(-50%);
+    background-color: var(--color-blue);
+}
+.bar__description{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.bar__description span{
+    margin-left: auto;
+}
+/* countdown */
+.banner-countdown{
+    width: 100%;
+    text-align: center;
+}
+.countdown__title{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.time-blocks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.time{
+    min-width: 162px;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin: 20px 18px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    background: #0B1D33;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 5px;
+}
+.time span{
+    color: #A4B4C3;
+    font-size: 35px;
+    margin-bottom:10px ;
+}
+.day span{
+    color: var(--color-blue);
+}
+.hour span{
+    color: var(--color-yellow);
+}
+.minute span{
+    color: var(--color-red);
+}
+.second span{
+    color: var(--color-green);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .banner-content h2{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .progress{
+        margin: 0;
+    }
+    .shape1{
+        max-width: 100px;
+        top:4%;
+        left: 0;
+    }
+    .shape3{
+        display: none;
+    }
+}
+/* **RESPONSIVE */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner-content h2{
+        margin-bottom: 30px;
+        font-size: 44px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .section-container{
+        max-width: 1096px;
+    }
+    .banner-content h2{
+        margin-bottom: 40px;
+        font-size: 45px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .section-container{
+        max-width: 1096px;
+    }
+    .banner-content h2{
+        margin-bottom: 45px;
+        font-size: 55px;
+    }
+}
