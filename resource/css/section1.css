@@ -81,7 +81,6 @@
     margin: 0 auto;
     padding: 0 0px;
     display: flex;
-    /* *? can use? */
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -99,9 +98,7 @@
     text-align: center;
 
 }
-.banner-content span{
-    margin: 0;
-}
+
 .banner-content h2{
     letter-spacing: -0.01em
 }
@@ -119,6 +116,7 @@
     padding-bottom: 25px;
     position: relative;
 }
+/* thanh doc nho */
 .progress__name::after{
     content: " ";
     width: 2px;
@@ -146,6 +144,7 @@
 .progress__name--green::after{
     background-color: var(--color-green);
 }
+/* thanh doc dai--trang */
 .progress__bar{
     height: 6px;
     background-color: #F2F2F2;
@@ -159,20 +158,20 @@
     right: 20%;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #fff;
     z-index: 5;
     border: 6px solid var(--color-blue);
 }
+/* thanh doc filter -- mau xanh */
 .progress__bar::after{
     position: absolute;
     content: "";
     top: 50%;
     height: 6px;
     width: 80%;
-    font-size: .75rem;
     transform: translateY(-50%);
     background-color: var(--color-blue);
 }
@@ -233,54 +232,4 @@
 }
 .second span{
     color: var(--color-green);
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and down) */
-@media only screen and (max-width: 768px) {
-    .banner-content h2{
-        margin-bottom: 25px;
-        font-size: 30px;
-    }
-    .progress{
-        margin: 0;
-    }
-    .shape1{
-        max-width: 100px;
-        top:4%;
-        left: 0;
-    }
-    .shape3{
-        display: none;
-    }
-}
-/* **RESPONSIVE */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .banner-content h2{
-        margin-bottom: 30px;
-        font-size: 44px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .section-container{
-        max-width: 1096px;
-    }
-    .banner-content h2{
-        margin-bottom: 40px;
-        font-size: 45px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .section-container{
-        max-width: 1096px;
-    }
-    .banner-content h2{
-        margin-bottom: 45px;
-        font-size: 55px;
-    }
 }

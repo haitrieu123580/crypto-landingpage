@@ -1,0 +1,24 @@
+:root {
+    --color-blue: #00c4f4;
+    --color-yellow:#FF9700;
+    --color-green:#12D176;
+    --color-red:#FF1D45;
+    --color-grey:#A5B5C3;
+}
+#sales{
+    /* padding-top: 130px; */
+}
+.parallax{
+  background-image: url('https://smthemebazar.com/html/bigtech/assets/img/bg/chart_bg.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn--blue::after,.btn--blue::before{
+    display: none;
+}
+.btn--blue{
+    background-color: var(--color-blue);
+}

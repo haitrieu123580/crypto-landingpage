@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resource/css/style.css">
-    <link rel="stylesheet" href="/resource/css/responsive.css">
-    <link rel="stylesheet" href="/resource/css/section1.css">
-    <link rel="stylesheet" href="/resource/css/section1_res.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/res.css">
+    <link rel="stylesheet" href="../resource/css/navbar.css">
+    <link rel="stylesheet" href="../resource/css/navbar_res.css">
+    <link rel="stylesheet" href="../resource/css/section1.css">
+    <link rel="stylesheet" href="../resource/css/section1_res.css">
+    <link rel="stylesheet" href="../resource/css/section2.css">
+    <link rel="stylesheet" href="../resource/css/section2_res.css">
+    <link rel="stylesheet" href="../resource/css/section3.css">
+    <link rel="stylesheet" href="../resource/css/section3_res.css">
     <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
     <title>Bigtech</title>
-    <style>
-     
-       
-    </style>
 </head>
 
 <body>
     <!-- header area -->
     <header>
-        <div class="row">   
+        <div class="row row--space">
             <div class="menu-warp">
                 <nav>
                     <!-- logo 1 -->
                     <div class="menu__logo">
-                        <img src="/resource/img/logo.png" alt="">
+                        <img src="../resource/img/logo.png" alt="">
                     </div>
                     <!-- main menu -->
                     <div class="menu__navbar">
@@ -41,7 +43,7 @@
                     <!-- action menu -->
                     <div class="menu__action">
                         <ul>
-                            <li class="head__lang"> 
+                            <li class="head__lang">
                                 <ul class="lang__list">
                                     <li class="lang"><a href="#">IND</a></li>
                                     <li class="lang"><a href="#">BNG</a></li>
@@ -49,14 +51,15 @@
                                     <li class="lang"><a href="#">CIN</a></li>
                                 </ul>
                             </li>
-                            <li class="head__btn"><a href="#" class="btn">BUY NOW</a></li>
+                            <li class="btn"><a href="#" class="btn__content">BUY NOW</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <!-- mobile menu icon and vertical menu -->
+            <!-- *todo css for mobile menu -->
             <div class="mobile__nav__toggler">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" style=" font-size: 30px;"></i>
                 <div class="menu__mobile">
                     <nav class="menu-box">
                         <div class="box__btn">
@@ -64,7 +67,7 @@
                         </div>
 
                         <div class="box__logo">
-                            <img src="/resource/img/logo.png" alt="">
+                            <img src="../resource/img/logo.png" alt="">
                         </div>
                         <div class="vertical-menu">
                             <ul class="box__navigation">
@@ -90,7 +93,7 @@
                 </div>
             </div>
         </div>
-        
+
     </header>
     <!-- header-area-end -->
     <!-- section 01 -->
@@ -104,8 +107,8 @@
             <div class="section-container">
                 <div class="banner-content">
                     <img src="/resource/img/fire.png" alt="" class="img--fire">
-                    <h2>Join Future Of Algorithmic <span style="color: #00c4f4;">Crypto</span>
-                    Trading Strategies</h2>
+                    <h2>Join Future Of Algorithmic <span class="text--bold--blue">Crypto</span>
+                        Trading Strategies</h2>
                 </div>
                 <div class="banner-progress">
                     <ul class="progress">
@@ -115,7 +118,7 @@
                     </ul>
                     <div class="progress__bar"></div>
                     <h4 class="bar__description">65% TARGET RAISED<span>ETH = $1000 = 3177.38 CIC</span> </h4>
-                    
+
                 </div>
                 <div class="banner-countdown">
                     <h2 class="countdown__title">ICO Will Start In..</h2>
@@ -126,17 +129,178 @@
                         <div class="time second"><span>14</span>Second</div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
-       
+
     </section>
     <!-- section 02-->
     <section id="about">
         <div class="container">
-            <div class="corp__info"></div>
-            <div class="corp__partner"></div>
-            <div class="corp__choose"></div>
+            <!-- about -->
+            <div class=" corp corp__info">
+                <div class="row--center info">
+                    <!-- *todo animation for 2 cols -->
+                    <div class="col col__left info__col--img">
+                        <img src="../resource/img/about_img01.png" alt="about_img01" class="about_img01 img--fit">
+                        <img src="../resource/img/about_img02.png" alt="about_img02" class="about_img02 img--fit">
+                    </div>
+                    <div class="col col__right info__col--descript">
+                        <div class="title">
+                            <p class="title__name">
+                                WHO WE ARE
+                            </p>
+                            <h2 class="title__content">
+                                The World' <span class="text--bold--blue">1st ICO</span>
+                                Platform That Offers Rewards
+                            </h2>
+                        </div>
+                        <p class="line--height text--grey script">The World’s 1st ICO Platform That Offers Rewards and
+                            The platform helps
+                            investors to make easy to purchase and sell
+                            their tokens</p>
+                        <div class="btn"><a href="#" class="btn__content">PURCHASE TOKENS</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- partner information -->
+            <div class="corp__partner">
+                <div class="title title--center">
+                    <p class="title__name">
+                        OUR TOP PARTNER
+                    </p>
+                </div>
+                <div class="row--center">
+                    <!-- *todo filter for items -->
+                    <ul class="list partner__list">
+                        <li class="list__item"><img src="../resource/img/partner_img01.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img02.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img03.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img04.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img05.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img06.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img07.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img08.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img09.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="../resource/img/partner_img10.png" alt="" class="img--fit">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- choose -->
+            
+            <div class="corp__choose">
+                <div class="title title--center">
+                    <p class="title__name">
+                        WHY CHOOSE US
+                    </p>
+                </div>
+                <div class="title title--center">
+                    <h2 class="title__content">
+                        Why Choose Our Bigtech <span class="text--bold--blue">Token</span>
+                    </h2>
+                </div>
+                <!-- *todo slick-slider -->
+                <div class="row">
+                    <div class="list row--center slick-slider  ">
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="../resource/img/choose_icon01.svg" alt="">
+                                </div>
+                            </div>
+                        
+                            <div class="choose__content">
+                                <!-- *?need tag a -->
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="../resource/img/choose_icon02.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="../resource/img/choose_icon03.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="../resource/img/choose_icon04.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sales">
+        <div class="sales-container parallax">
+            <div class="row--center">
+                <div class="col col__left">
+                    <ul class="nav-tabs">
+                        <li class="nav-item">
+                            FUNDING ALLOCATION
+                        </li>
+                        <li class="nav-item">
+                            TOKEN ALLOCATION
+                        </li>
+                    </ul>
+                    <!-- *todo -->
+                    <div class="tab tab1">
+                        <h2 class="tab__title">
+                            1 NCL = 0.0863 BTC
+                        </h2>
+                        <p class="tab__content text--grey line--height">
+                            The World's 1st ICO Platform That Offers Rewards and The platform helps investors to make
+                            easy to purchase and sell their tokens
+                        </p>
+                        <!-- *! warning -->
+                        <div class="btn">
+                            <a href="" class="btn__content btn--blue">BUY NOW</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col__right"></div>
+            </div>
         </div>
     </section>
 </body>

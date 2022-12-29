@@ -1,0 +1,104 @@
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 768px) {
+    .head__lang::before{
+        display: none;
+    }
+    .head__lang::after{
+        display: none;
+    }
+    .menu__action .btn::before{
+        display: none;
+    }
+    .menu-warp .menu__navbar {
+       display: none;
+    }
+    .menu-warp{
+        width: 50%;
+    }
+    .menu-warp nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu__action .btn{
+        display: none;
+    }
+    .mobile__nav__toggler i{
+        padding-right: 30px;
+    }
+
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 768px) {
+
+    .menu-warp .menu__navbar {
+       display: none;
+    }
+    .menu-warp{
+        width: 90%;
+    }
+    .menu-warp nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mobile__nav__toggler i{
+        padding-right: 30px;
+    }
+    .menu__action .btn{
+        display: inline-block;
+    }
+    
+ }
+
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .menu__action .btn::before{
+        display: inline-block;
+    }
+    .menu-warp .menu__navbar {
+        display: inline-block;
+     }
+    .menu-warp{
+        width: 100%;
+    }
+    /* *! */
+    .menu-warp nav {
+        justify-content: space-around;
+    }
+    .head__lang{
+        display: inline-block;
+    }
+    .navigation li {
+        margin-right: 10px;
+    }
+    .section-link {
+        padding: 20px 0;
+        font-size: 14px;
+    }
+    .mobile__nav__toggler{
+        display: none;
+    }
+ }
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .head__lang::before{
+        display: inline-block;
+    }
+    .head__lang::after{
+        display: inline-block;
+    }
+    .navigation li {
+        margin-right: 50px;
+    }
+    .section-link {
+        padding: 40px 0;
+    }
+
+ }
+
+ 
