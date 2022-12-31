@@ -32,7 +32,15 @@
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 768px) {
-
+    .head__lang::before{
+        display: none;
+    }
+    .head__lang::after{
+        display: none;
+    }
+    .menu__action .btn::before{
+        display: none;
+    }
     .menu-warp .menu__navbar {
        display: none;
     }
@@ -43,7 +51,7 @@
         width: 100%;
         justify-content: space-between;
     }
-    .mobile__nav__toggler i{
+    .mobile__nav__toggler .fa-bars{
         padding-right: 30px;
     }
     .menu__action .btn{

@@ -57,20 +57,19 @@
                 </nav>
             </div>
             <!-- mobile menu icon and vertical menu -->
-            <!-- *todo css for mobile menu -->
+            <!-- *todo animation for mobile menu -->
             <div class="mobile__nav__toggler">
-                <i class="fa-solid fa-bars" style=" font-size: 30px;"></i>
+                <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
                 <div class="menu__mobile">
-                    <nav class="menu-box">
-                        <div class="box__btn">
-                            <i class="fa-solid fa-times" style="color: #00c4f4;"></i>
-                        </div>
-
-                        <div class="box__logo">
+                    <nav class="menu-box"> 
+                           
+                        <div class="vertical-menu__logo">
                             <img src="../resource/img/logo.png" alt="">
+                            <i class="fa-solid fa-times" style="color: #00c4f4;" onclick="hideMobileMenu()"></i>
                         </div>
+                       
                         <div class="vertical-menu">
-                            <ul class="box__navigation">
+                            <ul class="vertical__list">
                                 <li><a href="#home" class="section-link">HOME</a></li>
                                 <li><a href="#about" class="section-link">ABOUT US</a></li>
                                 <li><a href="#sales" class="section-link">SALES</a></li>
@@ -80,18 +79,19 @@
                             </ul>
                         </div>
                         <div class="social-menu">
-                            <ul class="social-list">
-                                <li class="social-links"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="social-links"><a href=""><i class="fab fa-twitter"></i></a></li>
-                                <li class="social-links"><a href=""><i class="fab fa-instagram"></i></a></li>
-                                <li class="social-links"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="social-links"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <ul class="social__list">
+                                <li class="social__link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                         <!-- filter background -->
                     </nav>
                 </div>
             </div>
+            <div class="menu__background"></div>
         </div>
 
     </header>
@@ -138,9 +138,9 @@
     <section id="about">
         <div class="container">
             <!-- about -->
+              <!-- *todo animation for 2 cols -->
             <div class=" corp corp__info">
                 <div class="row--center info">
-                    <!-- *todo animation for 2 cols -->
                     <div class="col col__left info__col--img">
                         <img src="../resource/img/about_img01.png" alt="about_img01" class="about_img01 img--fit">
                         <img src="../resource/img/about_img02.png" alt="about_img02" class="about_img02 img--fit">
@@ -274,12 +274,12 @@
     <section id="sales">
         <div class="sales-container parallax">
             <div class="row--center">
-                <div class="col col__left">
+                <div class="col sale__col__left">
                     <ul class="nav-tabs">
-                        <li class="nav-item">
+                        <li class="nav-tab__item">
                             FUNDING ALLOCATION
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-tab__item">
                             TOKEN ALLOCATION
                         </li>
                     </ul>
@@ -289,20 +289,48 @@
                             1 NCL = 0.0863 BTC
                         </h2>
                         <p class="tab__content text--grey line--height">
+                            The World's 1st ICO Platform That Offers Rewards
+                             and The platform helps investors to make
+                            easy to purchase and sell their tokens
+                        </p>
+                        <div class="btn">
+                            <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
+                        </div>
+
+                    </div>
+                    <div class="tab tab2">
+                        <h2 class="tab__title">
+                            2 NCL = 0.0967 BTC
+                        </h2>
+                        <p class="tab__content text--grey line--height">
                             The World's 1st ICO Platform That Offers Rewards and The platform helps investors to make
                             easy to purchase and sell their tokens
                         </p>
                         <!-- *! warning -->
                         <div class="btn">
-                            <a href="" class="btn__content btn--blue">BUY NOW</a>
+                            <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="col col__right"></div>
+                <div class="col sales__col__right">
+                    <div class="chart">
+                        <div class="chart__img">
+                            <img src="../resource/img/chart.png" class="img--fit"alt="">
+                        </div>
+                        <ul class="chart__details">
+                            <li>Contingency:70%</li>
+                            <li> Business Development:10%</li>
+                            <li>Investor:30%</li>
+                            <li>Poland</li>
+                            <li>Legal & Regulation:10%</li>
+                            <li>Czech Republic</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </body>
-
+<script src="../resource/js/myScript.js"></script>
 </html>

@@ -5,6 +5,13 @@
     --color-red:#FF1D45;
     --color-grey:#A5B5C3;
 }
+*{
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+    line-height: 1.75;
+}
 .btn {
     width: 100%;
     position: relative;
@@ -22,7 +29,6 @@
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
-    box-shadow: 0px 6px 22px rgb(6 34 51 / 22%);
     background-clip: padding-box;
     position: relative;
     padding: 25px 50px;
@@ -42,20 +48,20 @@
 }
 
 .btn:hover .btn__content {
-    color: #00c4f4;
+    color: var(--color-blue);
 }
 
 .btn:hover .btn__content::after {
     background: linear-gradient(90deg, rgba(0, 196, 244, 1) 0%, rgba(0, 196, 244, 1), rgba(0, 196, 244, 1) 100%);
 }
-.btn__large{
+.btn--large{
 
 }
-.btn__medium{
+.btn--medium{
 
 }
-.btn__small{
-
+.btn--small{
+    padding: 20px 50px ;
 }
 .img--fit{
     max-width: 100%;
@@ -63,6 +69,7 @@
 .text--grey{
     color: var(--color-grey);
 }
+/* *!delete here */
 .line--height{
     font-size: 16px;
     font-size: 16px;
@@ -129,6 +136,9 @@
     flex-wrap: wrap;
     width: 80%
 }
+.row--space{
+    justify-content: space-between;
+}
 .row--center .btn{
     display: flex;
     justify-content: start;
@@ -136,7 +146,7 @@
 .col{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
    
 }
 .list{
@@ -151,3 +161,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+/* .container--padding{
+    width: 100%;
+    padding: 0 120px;
+} */

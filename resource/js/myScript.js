@@ -10,3 +10,22 @@ function activateMenu(){
 }
 activateMenu();
 window.addEventListener("scroll",activateMenu);
+
+function showMobileMenu(){
+    let menu__mobile =  document.querySelector(".menu__mobile");
+   
+    menu__mobile.style.transform= "translateX(-400px)";
+    menu__mobile.style.display = "block";
+    let menu__background = document.querySelector(".menu__background");
+    menu__background.classList.add("visible");
+
+    // document.querySelector("body").classList.add("bgFilter");
+}
+function hideMobileMenu(){
+    let menu__mobile = document.querySelector(".menu__mobile");
+    menu__mobile.style.transform= "translateX(400px)";
+    let body = document.querySelector("body");
+    let menu__background = document.querySelector(".menu__background");
+    menu__background.classList.remove("visible");
+
+}
