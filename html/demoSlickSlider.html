@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Simple Slider</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <style>
+        html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  padding: 25px;
+}
+.slider {
+  max-width: 1000px;
+  margin: 25px auto;
+  position: relative;
+}
+.slider-next,
+.slider-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+.slider-next {
+  right: -25px;
+}
+.slider-prev {
+  left: -25px;
+}
+.slider-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 10;
+}
+.slider-dots li {
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  background-color: #999;
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+.slider-dots li.active {
+  background-color: white;
+}
+.slider-wrapper {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.slider-main {
+  display: flex;
+  position: relative;
+  transition: transform 0.25s linear;
+  height: 100%;
+}
+.slider-item {
+  height: 100%;
+  width: 100%;
+  flex: 1 0 100%;
+  user-select: none;
+}
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <i class="fa fa-angle-left slider-prev"></i>
+      <ul class="slider-dots">
+        <li class="slider-dot-item active" data-index="0"></li>
+        <li class="slider-dot-item" data-index="1"></li>
+        <li class="slider-dot-item" data-index="2"></li>
+        <li class="slider-dot-item" data-index="3"></li>
+        <li class="slider-dot-item" data-index="4"></li>
+      </ul>
+      <div class="slider-wrapper">
+        <div class="slider-main">
+          <div class="slider-item">
+            <img
+              src="https://images.unsplash.com/photo-1475809913362-28a064062ccd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="https://images.unsplash.com/photo-1463501810073-6e31c827a9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <i class="fa fa-angle-right slider-next"></i>
+    </div>
+    <script src="./starter.js"></script>
+  </body>
+  <script lang="JavaScript"></script>
 </html>
