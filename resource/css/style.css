@@ -14,7 +14,9 @@ p {
     font-size: 16px;
     line-height: 1.75;
 }
-
+section{
+    padding-top: 130px;
+}
 .activeSection {
     /* transition: 0.4s; */
     border-bottom: 3px solid #00c4f4;
@@ -92,7 +94,9 @@ p {
     color: var(--color-blue);
     font-weight: 600;
 }
-
+.title--center{
+    
+}
 .title__name {
     position: relative;
     padding: 0 20px;
@@ -139,6 +143,7 @@ p {
 .title--center {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
 }
 
 .row {
@@ -186,16 +191,18 @@ p {
     flex-wrap: wrap;
 }
 
-.FadeToRight {
+.FadeRight {
     transform: 1s;
     animation: FadeRight 2s;
 }
 
-.FadeToLeft {
+.FadeLeft {
     transform: 1s;
     animation: FadeLeft 2s;
 }
-
+.FadeDown{
+    animation: 1s ease-in-out 0s normal none 1 running fadeDown;
+}
 @keyframes FadeRight {
     0% {
         opacity: 0;
@@ -219,4 +226,15 @@ p {
         transform: translateX(0);
     }
 
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }

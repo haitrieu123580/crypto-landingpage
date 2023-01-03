@@ -1,0 +1,103 @@
+:root {
+    --color-blue: #00c4f4;
+    --color-yellow: #FF9700;
+    --color-green: #12D176;
+    --color-red: #FF1D45;
+    --color-grey: #A5B5C3;
+}
+
+#team {
+    width: 100%;
+    position: relative;
+}
+
+#team::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #0B1D33 0%, rgba(11, 29, 51, 0) 97.51%);
+    z-index: -1;
+}
+
+.roadmap__title {
+    margin-bottom: 50px;
+}
+
+/* member infomation */
+/* .row-flex--center{
+    display: flex;
+    justify-content: center;
+} */
+.team__member {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.team__social {
+    padding-bottom: 0;
+}
+
+.team__social-link {
+    border: none;
+    margin: 0 0;
+
+}
+
+.member {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.member__avatar img {
+
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.member:hover .member__avatar img {
+    filter: grayscale(0%);
+}
+
+.member__avatar {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 16px;
+    display: inline-block;
+}
+
+.member__avatar::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
+    width: 226px;
+    height: 226px;
+    background: transparent;
+    border: 2px dashed var(--color-blue);
+    border-radius: 50%;
+    transition: opacity 0.3s linear;
+    animation: rotate 10s linear infinite;
+    opacity: 0;
+}
+.member:hover .member__avatar::after{
+    opacity: 1;
+}
+.member__name{
+    font-size: 22px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
