@@ -19,11 +19,13 @@
     <link rel="stylesheet" href="../resource/css/section4_res.css">
     <link rel="stylesheet" href="../resource/css/sectionTeam.css">
     <link rel="stylesheet" href="../resource/css/sectionTeam_res.css">
+    <link rel="stylesheet" href="../resource/css/sectionContact.css">
+    <link rel="stylesheet" href="../resource/css/sectionContact_res.css">
     <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
     <title>Bigtech</title>
 </head>
 
-<body onblur="activateMenu()">
+<body onload="activateMenu()">
     <!-- header area -->
     <header class="FadeDown">
         <div class="row row--space">
@@ -109,7 +111,6 @@
         </div>
 
     </header>
-    <!-- header-area-end -->
     <!-- section 01 -->
     <section id="home" class="banner-home">
         <div class="container">
@@ -137,10 +138,10 @@
                 <div class="banner-countdown">
                     <h2 class="countdown__title">ICO Will Start In..</h2>
                     <div class="time-blocks">
-                        <div class="time day"><span>36</span>Day</div>
-                        <div class="time hour"><span>12</span>Hour</div>
-                        <div class="time minute"><span>13</span>Minute</div>
-                        <div class="time second"><span>14</span>Second</div>
+                        <div class="time day"><span></span>Day</div>
+                        <div class="time hour"><span></span>Hour</div>
+                        <div class="time minute"><span></span>Minute</div>
+                        <div class="time second"><span></span>Second</div>
                     </div>
                 </div>
 
@@ -506,7 +507,64 @@
             </div>
         </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <div class="contact__title">
+            <div class="title title--center">
+                <p class="title__name title--center">
+                    CONTACT US
+                </p>
+                
+            </div>
+            <div class="title title--center">
+                <h2 class="title__content" style="text-align: center;">
+                    <span class="text--bold--blue">Contact</span> ICO Crypto
+                </h2>
+            </div>
+        </div>
+        <div class="row--center contact__info">
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-envelope icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">company@gmail.com<br>infoweb@gmai.com</p>
+            </div>
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-phone icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">+84 0977425031<br>+998 765 775 34</p>
+            </div>
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">State/province/area<br>Georgia198</p>
+            </div>
+        </div>
+        <div class="contact__form">
+            <form action="#">
+                <div class="form__row">
+                    <div class="form__input form__input--small">
+                        <input type="text" placeholder="Enter your Name" class="input--text">
+                    </div>
+                    <div class="form__input form__input--small">
+                        <input type="text" placeholder="Enter your Email" class="input--text">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__input">
+                        <textarea type="text" placeholder="Enter your message" class="input--text"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="btn__content" type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 <script src="../resource/js/myScript.js"></script>
 </html>

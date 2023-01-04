@@ -1,0 +1,43 @@
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    #contact .row--center{
+        flex-direction: row;
+    }
+    .info__item{
+        width: 100%;
+    }
+    .info__item::after{
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #contact .row--center{
+        flex-direction: row;
+    }
+    .info__item{
+        width: 50%;
+    }
+    .info__item::after{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .info__item{
+        width: 33%;
+    }
+    .info__item::after{
+        display: inline-block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #tecontactam .row--center,.contact__form{
+        max-width: 1400px;
+    }
+}
