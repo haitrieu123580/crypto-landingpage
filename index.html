@@ -1,6 +1,646 @@
 <!DOCTYPE html>
-<html>
-    <body style="margin:0px;padding:0px;overflow:hidden">
-        <iframe src="./html/index.html" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/res.css">
+    <link rel="stylesheet" href="./resource/css/navbar.css">
+    <link rel="stylesheet" href="./resource/css/navbar_res.css">
+    <link rel="stylesheet" href="./resource/css/section1.css">
+    <link rel="stylesheet" href="./resource/css/section1_res.css">
+    <link rel="stylesheet" href="./resource/css/section2.css">
+    <link rel="stylesheet" href="./resource/css/section2_res.css">
+    <link rel="stylesheet" href="./resource/css/section3.css">
+    <link rel="stylesheet" href="./resource/css/section3_res.css">
+    <link rel="stylesheet" href="./resource/css/section4.css">
+    <link rel="stylesheet" href="./resource/css/section4_res.css">
+    <link rel="stylesheet" href="./resource/css/sectionTeam.css">
+    <link rel="stylesheet" href="./resource/css/sectionTeam_res.css">
+    <link rel="stylesheet" href="./resource/css/sectionContact.css">
+    <link rel="stylesheet" href="./resource/css/sectionContact_res.css">
+    <link rel="stylesheet" href="./resource/css/footer.css">
+    <link rel="stylesheet" href="./resource/css/footer_res.css">
+    <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
+    <title>Bigtech</title>
+</head>
+
+<body onload="activateMenu()">
+    <!-- header area -->
+    <header class="FadeDown">
+        <div class="row row--space">
+            <div class="menu-warp">
+                <nav>
+                    <!-- logo 1 -->
+                    <div class="menu__logo">
+                        <img src="./resource/img/logo.png" alt="">
+                    </div>
+                    <!-- main menu -->
+                    <div class="menu__navbar">
+                        <ul class="navigation">
+                            <li class="link menu__container"><a href="#home" class="section-link">HOME</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="index.html">HOME ONE</a></li>
+                                    <li class="sub-menu__item"><a href="#">HOME TWO</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="#about" class="section-link">ABOUT US</a></li>
+                            <li class="link"><a href="#sales" class="section-link">SALES</a></li>
+                            <li class="link"><a href="#roadmap" class="section-link">ROADMAP</a></li>
+                            <li class="link menu__container"><a href="#blog" class="section-link">BLOG</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="index.html">OUR BLOG</a></li>
+                                    <li class="sub-menu__item"><a href="#">BLOG DETAILS</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="#contact" class="section-link">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <!-- action menu -->
+                    <div class="menu__action">
+                        <ul>
+                            <li class="head__lang">
+                                <ul class="lang__list">
+                                    <li class="lang"><a href="#">IND</a></li>
+                                    <li class="lang"><a href="#">BNG</a></li>
+                                    <li class="lang"><a href="#">TUR</a></li>
+                                    <li class="lang"><a href="#">CIN</a></li>
+                                </ul>
+                            </li>
+                            <li class="btn"><a href="#" class="btn__content">BUY NOW</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- mobile menu icon and vertical menu -->
+            <!-- todo subitem -->
+            <div class="mobile__nav__toggler">
+                <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
+                <div class="menu__mobile">
+                    <nav class="menu-box"> 
+                           
+                        <div class="vertical-menu__logo">
+                            <img src="./resource/img/logo.png" alt="">
+                            <i class="fa-solid fa-times" style="color: #00c4f4;" onclick="hideMobileMenu()"></i>
+                        </div>
+                       
+                        <div class="vertical-menu">
+                            <ul class="vertical__list">
+                                <li><a href="#home" class="section-link">HOME</a></li>
+                                <li><a href="#about" class="section-link">ABOUT US</a></li>
+                                <li><a href="#sales" class="section-link">SALES</a></li>
+                                <li><a href="#roadmap" class="section-link">ROADMAP</a></li>
+                                <li><a href="#blog" class="section-link">BLOG</a></li>
+                                <li><a href="#contact" class="section-link">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="social-menu">
+                            <ul class="social__list">
+                                <li class="social__link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="social__link"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- filter background -->
+                    </nav>
+                </div>
+            </div>
+            <div class="menu__background"></div>
+        </div>
+
+    </header>
+    <!-- section 01 -->
+    <section id="home" class="banner-home">
+        <div class="container">
+            <div class="banner-shape">
+                <img src="/resource/img/banner_shape01.png" alt="" class="shape1">
+                <img src="/resource/img/banner_shape02.png" alt="" class="shape2">
+                <img src="/resource/img/banner_shape03.png" alt="" class="shape3">
+            </div>
+            <div class="section-container">
+                <div class="banner-content">
+                    <img src="/resource/img/fire.png" alt="" class="img--fire">
+                    <h2>Join Future Of Algorithmic <span class="text--bold--blue" style="margin: 0;">Crypto</span>
+                        Trading Strategies</h2>
+                </div>
+                <div class="banner-progress">
+                    <ul class="progress">
+                        <li class="progress__name progress__name--blue">PRE SELL</li>
+                        <li class="progress__name progress__name--yellow">SOFT CAP</li>
+                        <li class="progress__name progress__name--green">BONUS</li>
+                    </ul>
+                    <div class="progress__bar"></div>
+                    <h4 class="bar__description">65% TARGET RAISED<span>ETH = $1000 = 3177.38 CIC</span> </h4>
+
+                </div>
+                <div class="banner-countdown">
+                    <h2 class="countdown__title">ICO Will Start In..</h2>
+                    <div class="time-blocks">
+                        <div class="time day"><span>00</span>Day</div>
+                        <div class="time hour"><span>00</span>Hour</div>
+                        <div class="time minute"><span>00</span>Minute</div>
+                        <div class="time second"><span>00</span>Second</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- section 02-->
+    <section id="about">
+        <div class="container">
+            <!-- about -->
+              <!-- *todo animation for 2 cols -->
+            <div class=" corp corp__info">
+                <div class="row--center info">
+                    <div class="col col__left info__col--img FadeRight">
+                        <img src="./resource/img/about_img01.png" alt="about_img01" class="about_img01 img--fit">
+                        <img src="./resource/img/about_img02.png" alt="about_img02" class="about_img02 img--fit">
+                    </div>
+                    <div class="col col__right info__col--descript FadeLeft">
+                        <div class="title">
+                            <p class="title__name">
+                                WHO WE ARE
+                            </p>
+                            <h2 class="title__content">
+                                The World' <span class="text--bold--blue">1st ICO</span>
+                                Platform That Offers Rewards
+                            </h2>
+                        </div>
+                        <p class="line--height text--grey script">The World’s 1st ICO Platform That Offers Rewards and
+                            The platform helps
+                            investors to make easy to purchase and sell
+                            their tokens</p>
+                        <div class="btn"><a href="#" class="btn__content">PURCHASE TOKENS</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- partner information -->
+            <div class="corp__partner">
+                <div class="title title--center">
+                    <p class="title__name">
+                        OUR TOP PARTNER
+                    </p>
+                </div>
+                <div class="row--center">
+                    <!-- *todo filter for items -->
+                    <ul class="list partner__list">
+                        <li class="list__item"><img src="./resource/img/partner_img01.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img02.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img03.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img04.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img05.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img06.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img07.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img08.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img09.png" alt="" class="img--fit">
+                        </li>
+                        <li class="list__item"><img src="./resource/img/partner_img10.png" alt="" class="img--fit">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- choose -->
+            
+            <div class="corp__choose">
+                <div class="title title--center">
+                    <p class="title__name">
+                        WHY CHOOSE US
+                    </p>
+                </div>
+                <div class="title title--center">
+                    <h2 class="title__content">
+                        Why Choose Our Bigtech <span class="text--bold--blue">Token</span>
+                    </h2>
+                </div>
+                <!-- *todo slick-slider -->
+                <div class="row">
+                    <div class="list row--center slick-slider  ">
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="./resource/img/choose_icon01.svg" alt="">
+                                </div>
+                            </div>
+                        
+                            <div class="choose__content">
+                                <!-- *?need tag a -->
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="./resource/img/choose_icon02.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="./resource/img/choose_icon03.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                        <div class="list__item choose__item">
+                            <div class="start">
+                                <div class="choose__icon">
+                                    <img src="./resource/img/choose_icon04.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="choose__content">
+                                <h2 class="title">
+                                    Lifetime free transaction 
+                                </h2>
+                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sales">
+        <div class="sales-container parallax">
+            <div class="row--center">
+                <div class="col sale__col__left FadeRight">
+                    <ul class="nav-tabs">
+                        <li id ="tab1__name"class="nav-tab__item tab--selected" onclick="selectTab1()">
+                            FUNDING ALLOCATION
+                        </li>
+                        <li id ="tab2__name" class="nav-tab__item" onclick="selectTab2()">
+                            TOKEN ALLOCATION
+                        </li>
+                    </ul>
+                    <!-- *todo -->
+                    <div class="tab tab1">
+                        <h2 class="tab__title">
+                            1 NCL = 0.0863 BTC
+                        </h2>
+                        <p class="tab__content text--grey line--height">
+                            The World's 1st ICO Platform That Offers Rewards
+                             and The platform helps investors to make
+                            easy to purchase and sell their tokens
+                        </p>
+                        <div class="btn">
+                            <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
+                        </div>
+
+                    </div>
+                    <div class="tab tab2">
+                        <h2 class="tab__title">
+                            2 NCL = 0.0967 BTC
+                        </h2>
+                        <p class="tab__content text--grey line--height">
+                            The World's 1st ICO Platform That Offers Rewards and The platform helps investors to make
+                            easy to purchase and sell their tokens
+                        </p>
+                        <!-- *! warning -->
+                        <div class="btn">
+                            <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col sales__col__right FadeLeft">
+                    <div class="chart">
+                        <div class="chart__img">
+                            <img src="./resource/img/chart.png" class="img--fit"alt="">
+                        </div>
+                        <ul class="chart__details">
+                            <li>Contingency:70%</li>
+                            <li> Business Development:10%</li>
+                            <li>Investor:30%</li>
+                            <li>Poland</li>
+                            <li>Legal & Regulation:10%</li>
+                            <li>Czech Republic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="roadmap">
+        <div class="roadmap__title">
+            <div class="title title--center">
+                <p class="title__name title--center">
+                    OUR ROADMAP
+                </p>
+                
+            </div>
+            <div class="title title--center">
+                <h2 class="title__content" style="text-align: center;">
+                    Bigtech Strategy And<br> Project <span class="text--bold--blue">Plan</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="roadmap__title">
+            <div class="title title--center">
+                <p class="title__name title--center">
+                    OUR TEAM
+                </p>
+                
+            </div>
+            <div class="title title--center">
+                <h2 class="title__content" style="text-align: center;">
+                    The Leadership<br> <span class="text--bold--blue">Team</span>
+                </h2>
+            </div>
+        </div>
+        <div class=" row--center team__member">
+            <!-- member 1 -->
+            <div class="member">
+                <div class="member__avatar">
+                    <img src="./resource/img/team_img01.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+             <!-- member 2 -->
+            <div class="member">
+                <div class="member__avatar ">
+                    <img src="./resource/img/team_img02.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 3 -->
+              <div class="member">
+                <div class="member__avatar">
+                    <img src="./resource/img/team_img03.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 4 -->
+              <div class="member">
+                <div class="member__avatar ">
+                    <img src="./resource/img/team_img04.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 5 -->
+              <div class="member">
+                <div class="member__avatar">
+                    <img src="./resource/img/team_img05.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 6 -->
+              <div class="member">
+                <div class="member__avatar     ">
+                    <img src="./resource/img/team_img06.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey       ">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 7 -->
+              <div class="member">
+                <div class="member__avatar        ">
+                    <img src="./resource/img/team_img07.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <!-- member 8 -->
+              <div class="member">
+                <div class="member__avatar  ">
+                    <img src="./resource/img/team_img08.png" alt="">
+                </div>
+                <div class="member__info line--height">
+                    <h2 class="member__name  ">Cameron Williamson</h2>
+                    <span class="member__position text--grey">Founder & CO</span>
+                    <ul class="social__list team__social">
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact__title">
+            <div class="title title--center">
+                <p class="title__name title--center">
+                    CONTACT US
+                </p>
+                
+            </div>
+            <div class="title title--center">
+                <h2 class="title__content" style="text-align: center;">
+                    <span class="text--bold--blue">Contact</span> ICO Crypto
+                </h2>
+            </div>
+        </div>
+        <div class="row--center contact__info">
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-envelope icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">company@gmail.com<br>infoweb@gmai.com</p>
+            </div>
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-phone icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">+84 0977425031<br>+998 765 775 34</p>
+            </div>
+            <div class="info__item">
+                <div class="contact__icon">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span class="icon__background"></span>
+                </div>
+                <p class="info__content">State/province/area<br>Georgia198</p>
+            </div>
+        </div>
+        <div class="contact__form">
+            <form action="#">
+                <div class="form__row">
+                    <div class="form__input form__input--small">
+                        <input type="text" placeholder="Enter your Name" class="input--text" required>
+                    </div>
+                    <div class="form__input form__input--small">
+                        <input type="text" placeholder="Enter your Email" class="input--text">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__input">
+                        <textarea type="text" placeholder="Enter your message" class="input--text"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="btn__content" type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer__container">
+        <div class="footer__arrow">
+            <button class="btn">
+                <a href="#">
+                    <i class="fas fa-arrow-up" href="#"></i>
+                </a> 
+            </button>
+        </div>
+        <div class="footer__content">
+            <!-- *todo animation FadeUp here -->
+                <div class="ftcontent__col ftcontent__col--25">
+                    <img src="./resource/img/logo.png" alt="">
+                    <p class="text--grey">A new to make the payments easy, reliable and 100% secure. Claritatem itamconse quat. Exerci tatinulla</p>
+                    <!-- *todo make social list here -->
+                    <ul class="social__list">
+                        <li class="item--circle"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-skype"></i></a></li>
+                    </ul>
+                </div>
+                <div class="ftcontent__col ftcontent__col--25">
+                    <div class="footer__link">
+                        <h4 class="ftcol__title">USEFUL LINKS</h4>
+                        <ul>
+                            <li><a class="text--grey" href="#">Contact us</a></li>
+                            <li><a class="text--grey" href="#">How it Works</a></li>
+                            <li><a class="text--grey" href="#">Create</a></li>
+                            <li><a class="text--grey" href="#">Explore</a></li>
+                            <li><a class="text--grey" href="#">Terms&Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftcontent__col ftcontent__col--10">
+                    <div class="footer__link">
+                        <h4 class="ftcol__title">COMMUNITY</h4>
+                        <ul>
+                            <li><a class="text--grey" href="#">Help Center</a></li>
+                            <li><a class="text--grey" href="#">Partners</a></li>
+                            <li><a class="text--grey" href="#">Suggestions</a></li>
+                            <li><a class="text--grey" href="#">Blog</a></li>
+                            <li><a class="text--grey" href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftcontent__col ftcontent__col--40">
+                    <div class="footer__letter">
+                        <div class="letter--top">
+                            <h4 class="ftcol__title">SUBCRIBE NEWSLETTER</h4>
+                            <p class="text--grey">Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                        </div>
+                        <div class="letter--bottom">
+                            <form action="#">
+                                <input type="email" placeholder="Info@gmail.com" required>
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="copyright">
+                <p>Copyright@2022. All Rights Reserved Bigtech</p>
+            </div>
+            <div class="ftbottom__list">
+                <ul>
+                    <li><a href="" class="text--grey">Terms and conditions</a></li>
+                    <li><a href="" class="text--grey">Privacy policy</a></li>
+                    <li><a href="" class="text--grey">Login/Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./resource/js/myScript.js"></script>
 </html>
