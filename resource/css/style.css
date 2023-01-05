@@ -17,6 +17,9 @@ p {
 section{
     padding-top: 130px;
 }
+html,body {
+    scroll-behavior: smooth;
+}
 .activeSection {
     /* transition: 0.4s; */
     border-bottom: 3px solid #00c4f4;

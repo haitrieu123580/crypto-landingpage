@@ -7,6 +7,7 @@
 }
 #contact{
     width: 100%;
+    padding: 100px 0;
 }
 .contact__info{
     margin: 50px auto;
@@ -133,4 +134,5 @@
 .contact__form .btn__content{
     padding: 20px 30px;
     background-color: #0B1D33;
+    border-color: var(--color-blue);
 }

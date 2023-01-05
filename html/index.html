@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../resource/css/sectionTeam_res.css">
     <link rel="stylesheet" href="../resource/css/sectionContact.css">
     <link rel="stylesheet" href="../resource/css/sectionContact_res.css">
+    <link rel="stylesheet" href="../resource/css/footer.css">
+    <link rel="stylesheet" href="../resource/css/footer_res.css">
     <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
     <title>Bigtech</title>
 </head>
@@ -138,10 +140,10 @@
                 <div class="banner-countdown">
                     <h2 class="countdown__title">ICO Will Start In..</h2>
                     <div class="time-blocks">
-                        <div class="time day"><span></span>Day</div>
-                        <div class="time hour"><span></span>Hour</div>
-                        <div class="time minute"><span></span>Minute</div>
-                        <div class="time second"><span></span>Second</div>
+                        <div class="time day"><span>00</span>Day</div>
+                        <div class="time hour"><span>00</span>Hour</div>
+                        <div class="time minute"><span>00</span>Minute</div>
+                        <div class="time second"><span>00</span>Second</div>
                     </div>
                 </div>
 
@@ -378,7 +380,6 @@
         <div class=" row--center team__member">
             <!-- member 1 -->
             <div class="member">
-                <!-- *todo tao border xoay -->
                 <div class="member__avatar">
                     <img src="../resource/img/team_img01.png" alt="">
                 </div>
@@ -548,7 +549,7 @@
             <form action="#">
                 <div class="form__row">
                     <div class="form__input form__input--small">
-                        <input type="text" placeholder="Enter your Name" class="input--text">
+                        <input type="text" placeholder="Enter your Name" class="input--text" required>
                     </div>
                     <div class="form__input form__input--small">
                         <input type="text" placeholder="Enter your Email" class="input--text">
@@ -566,5 +567,80 @@
         </div>
     </section>
 </body>
+<footer>
+    <div class="footer__container">
+        <div class="footer__arrow">
+            <button class="btn">
+                <a href="#">
+                    <i class="fas fa-arrow-up" href="#"></i>
+                </a> 
+            </button>
+        </div>
+        <div class="footer__content">
+            <!-- *todo animation FadeUp here -->
+                <div class="ftcontent__col ftcontent__col--25">
+                    <img src="../resource/img/logo.png" alt="">
+                    <p class="text--grey">A new to make the payments easy, reliable and 100% secure. Claritatem itamconse quat. Exerci tatinulla</p>
+                    <!-- *todo make social list here -->
+                    <ul class="social__list">
+                        <li class="item--circle"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="item--circle"><a href="#"><i class="fab fa-skype"></i></a></li>
+                    </ul>
+                </div>
+                <div class="ftcontent__col ftcontent__col--25">
+                    <div class="footer__link">
+                        <h4 class="ftcol__title">USEFUL LINKS</h4>
+                        <ul>
+                            <li><a class="text--grey" href="#">Contact us</a></li>
+                            <li><a class="text--grey" href="#">How it Works</a></li>
+                            <li><a class="text--grey" href="#">Create</a></li>
+                            <li><a class="text--grey" href="#">Explore</a></li>
+                            <li><a class="text--grey" href="#">Terms&Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftcontent__col ftcontent__col--10">
+                    <div class="footer__link">
+                        <h4 class="ftcol__title">COMMUNITY</h4>
+                        <ul>
+                            <li><a class="text--grey" href="#">Help Center</a></li>
+                            <li><a class="text--grey" href="#">Partners</a></li>
+                            <li><a class="text--grey" href="#">Suggestions</a></li>
+                            <li><a class="text--grey" href="#">Blog</a></li>
+                            <li><a class="text--grey" href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftcontent__col ftcontent__col--40">
+                    <div class="footer__letter">
+                        <div class="letter--top">
+                            <h4 class="ftcol__title">SUBCRIBE NEWSLETTER</h4>
+                            <p class="text--grey">Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                        </div>
+                        <div class="letter--bottom">
+                            <form action="#">
+                                <input type="email" placeholder="Info@gmail.com" required>
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="copyright">
+                <p>Copyright@2022. All Rights Reserved Bigtech</p>
+            </div>
+            <div class="ftbottom__list">
+                <ul>
+                    <li><a href="" class="text--grey">Terms and conditions</a></li>
+                    <li><a href="" class="text--grey">Privacy policy</a></li>
+                    <li><a href="" class="text--grey">Login/Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="../resource/js/myScript.js"></script>
 </html>

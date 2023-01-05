@@ -337,6 +337,13 @@ a {
     padding: 10px;
     border: 1px solid rgb(255 255 255 / 6%);
     margin-left: 10px;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+.social__link:hover{
+    background-color: #00C4F4;
 }
 .menu__background{
     position: fixed;

@@ -9,6 +9,16 @@
     .info__item::after{
         display: none;
     }
+    .form__row:nth-child(1){
+        flex-wrap: wrap;
+    }
+    .form__input--small{
+        width: 100%;
+    }
+    .form__input--small:nth-child(1)
+    {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -22,6 +32,12 @@
     }
     .info__item::after{
         display: none;
+    }
+    .form__row:nth-child(1){
+        flex-wrap: nowrap;
+    }
+    .form__input--small{
+        width: 40%;
     }
 }
 

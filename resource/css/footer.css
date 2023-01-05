@@ -1,0 +1,215 @@
+:root {
+    --color-blue: #00c4f4;
+    --color-yellow: #FF9700;
+    --color-green: #12D176;
+    --color-red: #FF1D45;
+    --color-grey: #A5B5C3;
+    --color-blue--bold:#0B1D33;
+}
+
+/* footer content */
+.footer__container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 30px;
+}
+/* background */
+footer{
+    position: relative;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(359.43deg, #0B1D33 11.06%, rgba(11, 29, 51, 0) 99.43%);
+    z-index: -1;
+}
+/* can le */
+.footer__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 100px 0;
+}
+/* footer arrow */
+.footer__arrow{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.footer__arrow::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #1F262F;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+.footer__arrow .btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #1F262F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+     background-color: #030B15;
+}
+.footer__arrow .btn i{
+    width: 100%;
+    font-weight: 900;
+}
+.footer__arrow .btn:hover{
+    background-color: var(--color-blue);
+}
+/* footer content */
+.ftcontent__col {
+    padding: 0 15px;
+}
+
+.ftcontent__col--25 {
+    width: 25%;
+}
+.ftcontent__col:nth-child(2), .ftcontent__col:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+.ftcontent__col--10 {
+    width: 10%;
+}
+
+.ftcontent__col--40 {
+    width: 40%;
+}
+
+.ftcontent__col a {
+    font-weight: unset;
+}
+
+.ftcol__title {
+    margin: 20px 0 25px;
+}
+
+.ftcontent__col li {
+    display: block;
+    margin: 15px 0;
+}
+
+.footer__link ul li a {
+    font-size: 14px;
+}
+/* css social list col 1 */
+.ftcontent__col .social__list{
+    justify-content: start;
+    padding-bottom: 0;
+}
+.ftcontent__col .social__list li{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #719ED6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.ftcontent__col .social__list li:hover{
+    background-color: var(--color-blue);
+}
+/* css transition border-bottom for footer link */
+.footer__link ul li a{
+    position: relative;
+}
+.footer__link ul li a:after {
+    position: absolute;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: solid 1px #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: 100% 50%;
+}
+
+.footer__link ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin:0 100%;
+}
+.footer__link ul li a:hover{
+    color: #fff;
+}
+/* col 4 */
+.letter--top {
+    margin-bottom: 30px;
+}
+.letter--top p{
+    font-size: 15px;
+}
+.letter--bottom {
+    margin-top: 30px;
+    position: relative;
+    min-height: 80px;
+}
+.letter--bottom form{
+    position: relative;
+    
+}
+.letter--bottom input{
+    width: 100%;
+    border: none;
+    background: var(--color-blue--bold);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 20px 50px 20px 25px;
+    color: #fff;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.letter--bottom button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* padding: 20px; */
+    width: 65px;
+    height: 70px;
+    background-color: var(--color-blue);
+    border-radius: 8px;
+    border: unset;
+    font-size: 20px;
+}
+/* footer bottom */
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border-top: 1px solid rgb(255 255 255 / 6%);
+    padding: 27px 0;
+}
+.ftbottom__list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ftbottom__list li{
+    padding: 0 10px;
+}
+.ftbottom__list li a{
+    font-size: 15px;
+}
+.copyright p{
+    font-size: 15px;
+}
+.ftbottom__list li a:hover{
+    color: #fff;
+}

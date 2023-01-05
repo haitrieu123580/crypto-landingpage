@@ -1,0 +1,113 @@
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .ftcontent__col:nth-child(1) {
+        width: 100%
+    }
+    .ftcontent__col:nth-child(2) {
+        width:100%;
+        justify-content: start;
+    }
+    .ftcontent__col:nth-child(3) {
+        width: 100%;
+        justify-content: start;
+    }
+    .ftcontent__col:nth-child(4) {
+        width: 100%
+    }
+    /* footer bottom */
+    .footer__bottom{
+        justify-content: center;
+    }
+    .ftbottom__list{
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .ftcontent__col:nth-child(1) {
+        width: 50%
+    }
+    .ftcontent__col:nth-child(2) {
+        width:50%
+    }
+    .ftcontent__col:nth-child(3) {
+        width: 45%;
+        justify-content: start;
+    }
+    .ftcontent__col:nth-child(4) {
+        width: 55%
+    }
+
+    .footer__bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ftbottom__list{
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .ftcontent__col{
+        width: 33%;
+    }
+    .ftcontent__col:nth-child(1) {
+        /* *!responsive here */
+        width: 30%;
+    }
+    .ftcontent__col:nth-child(2) {
+        /* *!responsive here */
+        width:40%;
+    }
+    .ftcontent__col:nth-child(3) {
+        /* *!responsive here */
+        width: 30%;
+    }
+    .ftcontent__col:nth-child(4) {
+        width: 40%
+    }
+
+    .footer__bottom{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ftbottom__list{
+        display: flex;
+        width: 50%;
+        padding: 10px 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    footer{
+        margin: 0 auto;
+    }
+    footer .footer__container{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .ftcontent__col:nth-child(1) {
+        width: 25%
+    }
+    .ftcontent__col:nth-child(2) {
+        width:25%
+    }
+    .ftcontent__col:nth-child(3) {
+        width: 10%;
+        justify-content: start;
+    }
+    .ftcontent__col:nth-child(4) {
+        width: 40%
+    }
+    .footer__letter {
+        margin-left: 90px;
+    }
+
+}

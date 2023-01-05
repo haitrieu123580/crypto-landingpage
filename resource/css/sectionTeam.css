@@ -101,3 +101,12 @@
         transform: rotate(360deg);
     }
 }
+.team__social .social__link:hover{
+    background-color: unset;
+}
+.team__social-link a i{
+    font-size: 14px;
+}
+.team__social-link a i:hover{
+    color: var(--color-blue);
+}
