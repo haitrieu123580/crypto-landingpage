@@ -17,7 +17,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1111;
-   
     visibility: visible;
 }
 @keyframes fadeDown {
@@ -34,7 +33,6 @@ header {
 header .row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 ul {

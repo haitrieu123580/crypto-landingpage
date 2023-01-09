@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Slick Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rebeccapurple;
+        }
+        .container {
+            margin: 0 auto;
+            width: 60%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 25%;
+            margin: 0 5px;
+            position: relative;
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .slide-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #next-btn,
+        #prev-btn {
+            cursor: pointer;
+            background: transparent;
+            font-size: 30px;
+            border: none;
+            padding: 10px;
+            color: pink;
+        }
+
+        #next-btn:focus,
+        #prev-btn:focus {
+            outline: none;
+        }
+
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            font-size: 60px;
+            color: black;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- tat ca slide -->
+        <div class="slides">
+            <!-- slide 1 -->
+            <div class="slide" id="last-clone">
+                <div class="slide__img">
+                    <img src="../resource/img/choose_icon01.svg" alt="">
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+             <!-- slide 1 -->
+             <div class="slide">
+                <div class="slide__img">
+                    <img src="../resource/img/choose_icon01.svg" alt="">
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="../resource/img/choose_icon02.svg" alt="">
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="../resource/img/choose_icon03.svg" alt="">
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="../resource/img/choose_icon04.svg" alt="">
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide 1 -->
+            <div class="slide" id="first-clone">
+                <div class="slide__img">
+                    5
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide">
+                <div class="slide__img">
+                    6
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="slide">
+                <div class="slide__img">
+                    7
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="slide" >
+                <div class="slide__img">
+                    8
+                </div>
+                <div class="slide__script">
+                    <div class="slide__script--title">
+                        <h3>Lifetime free transaction</h3>
+                    </div>
+                    <div class="slide__script--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- 2 button  -->
+        <div class="slide-controls">
+            <button id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="../resource/js/SlickSlider.js"></script>
+
+</html>

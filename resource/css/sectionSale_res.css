@@ -8,6 +8,10 @@
         padding-right: 0;
         flex-direction: column-reverse;
     }
+    .chart__details{
+        flex-direction: column;
+        justify-content: start;
+    }
 }
 
 
@@ -21,6 +25,9 @@
     #sales .col{
         padding-left: 10%;
         padding-right: 10%;
+    }
+    .chart__details{
+        flex-direction: row;
     }
 }
 

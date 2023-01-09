@@ -16,6 +16,10 @@
     .partner__list li {
         width: 100%;
     }
+    .slide {
+        min-width: 100%;
+        margin: 0 5px;
+    }
 }
 
 
@@ -35,6 +39,10 @@
 
     .info__col--descript .script {
         width: 100%;
+    }
+    .slide {
+        min-width: 50%;
+        margin: 0 5px;
     }
 }
 
@@ -60,6 +68,11 @@
     .info__col--descript .script {
         width: 70%;
     }
+    /* slider */
+    .slide {
+        min-width: 30%;
+        margin: 0 5px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -84,5 +97,11 @@
     #about .corp__choose .row--center{
         padding-bottom: 50px;
     }
-
+    .slide {
+        min-width: 25%;
+        margin: 0 10px;
+    }
+    #bar{
+        width: 25%;
+    }
 }

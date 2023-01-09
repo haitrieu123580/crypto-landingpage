@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- *!change from none to inline-block => not smooth -->
 
 <head>
     <meta charset="UTF-8">
@@ -9,25 +10,26 @@
     <link rel="stylesheet" href="./resource/css/res.css">
     <link rel="stylesheet" href="./resource/css/navbar.css">
     <link rel="stylesheet" href="./resource/css/navbar_res.css">
-    <link rel="stylesheet" href="./resource/css/section1.css">
-    <link rel="stylesheet" href="./resource/css/section1_res.css">
-    <link rel="stylesheet" href="./resource/css/section2.css">
-    <link rel="stylesheet" href="./resource/css/section2_res.css">
-    <link rel="stylesheet" href="./resource/css/section3.css">
-    <link rel="stylesheet" href="./resource/css/section3_res.css">
-    <link rel="stylesheet" href="./resource/css/section4.css">
-    <link rel="stylesheet" href="./resource/css/section4_res.css">
+    <link rel="stylesheet" href="./resource/css/sectionHome.css">
+    <link rel="stylesheet" href="./resource/css/sectionHome.css">
+    <link rel="stylesheet" href="./resource/css/sectionABout.css">
+    <link rel="stylesheet" href="./resource/css/sectionABout_res.css">
+    <link rel="stylesheet" href="./resource/css/sectionSale.css">
+    <link rel="stylesheet" href="./resource/css/sectionSale_res.css">
+    <link rel="stylesheet" href="./resource/css/sectionRoadmap.css">
+    <link rel="stylesheet" href="./resource/css/sectionRoadmap_res.css">
     <link rel="stylesheet" href="./resource/css/sectionTeam.css">
     <link rel="stylesheet" href="./resource/css/sectionTeam_res.css">
     <link rel="stylesheet" href="./resource/css/sectionContact.css">
     <link rel="stylesheet" href="./resource/css/sectionContact_res.css">
     <link rel="stylesheet" href="./resource/css/footer.css">
     <link rel="stylesheet" href="./resource/css/footer_res.css">
+
     <script src="https://kit.fontawesome.com/682fa468d1.js" crossorigin="anonymous"></script>
     <title>Bigtech</title>
 </head>
 
-<body onload="activateMenu()">
+<body>
     <!-- header area -->
     <header class="FadeDown">
         <div class="row row--space">
@@ -79,13 +81,13 @@
             <div class="mobile__nav__toggler">
                 <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
                 <div class="menu__mobile">
-                    <nav class="menu-box"> 
-                           
+                    <nav class="menu-box">
+
                         <div class="vertical-menu__logo">
                             <img src="./resource/img/logo.png" alt="">
                             <i class="fa-solid fa-times" style="color: #00c4f4;" onclick="hideMobileMenu()"></i>
                         </div>
-                       
+
                         <div class="vertical-menu">
                             <ul class="vertical__list">
                                 <li><a href="#home" class="section-link">HOME</a></li>
@@ -113,7 +115,7 @@
         </div>
 
     </header>
-    <!-- section 01 -->
+    <!-- section 01-home -->
     <section id="home" class="banner-home">
         <div class="container">
             <div class="banner-shape">
@@ -140,10 +142,10 @@
                 <div class="banner-countdown">
                     <h2 class="countdown__title">ICO Will Start In..</h2>
                     <div class="time-blocks">
-                        <div class="time day"><span>00</span>Day</div>
-                        <div class="time hour"><span>00</span>Hour</div>
-                        <div class="time minute"><span>00</span>Minute</div>
-                        <div class="time second"><span>00</span>Second</div>
+                        <div class="time day"><span id="day">00</span>Day</div>
+                        <div class="time hour"><span id="hour">00</span>Hour</div>
+                        <div class="time minute"><span id="minute">00</span>Minute</div>
+                        <div class="time second"><span id="second">00</span>Second</div>
                     </div>
                 </div>
 
@@ -151,11 +153,10 @@
         </div>
 
     </section>
-    <!-- section 02-->
+    <!-- section 02-about-->
     <section id="about">
         <div class="container">
             <!-- about -->
-              <!-- *todo animation for 2 cols -->
             <div class=" corp corp__info">
                 <div class="row--center info">
                     <div class="col col__left info__col--img FadeRight">
@@ -188,7 +189,6 @@
                     </p>
                 </div>
                 <div class="row--center">
-                    <!-- *todo filter for items -->
                     <ul class="list partner__list">
                         <li class="list__item"><img src="./resource/img/partner_img01.png" alt="" class="img--fit">
                         </li>
@@ -214,7 +214,6 @@
                 </div>
             </div>
             <!-- choose -->
-            
             <div class="corp__choose">
                 <div class="title title--center">
                     <p class="title__name">
@@ -226,88 +225,148 @@
                         Why Choose Our Bigtech <span class="text--bold--blue">Token</span>
                     </h2>
                 </div>
-                <!-- *todo slick-slider -->
+                <!-- *! -->
                 <div class="row">
-                    <div class="list row--center slick-slider  ">
-                        <div class="list__item choose__item">
-                            <div class="start">
-                                <div class="choose__icon">
+                    <div class="list slide-container">
+                        <div class="slides">
+                            <!-- slide 1 last-clone-->
+                            <div class="slide" id="last-clone">
+                                <div class="slide__img">
                                     <img src="./resource/img/choose_icon01.svg" alt="">
                                 </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Lifetime free transaction</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
                             </div>
-                        
-                            <div class="choose__content">
-                                <!-- *?need tag a -->
-                                <h2 class="title">
-                                    Lifetime free transaction 
-                                </h2>
-                                <p class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            <!-- slide 1 -->
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon01.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Lifetime free transaction</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="list__item choose__item">
-                            <div class="start">
-                                <div class="choose__icon">
+                            <!-- slide 2 -->
+                            <div class="slide">
+                                <div class="slide__img">
                                     <img src="./resource/img/choose_icon02.svg" alt="">
                                 </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Protect the indentity</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
                             </div>
-                            <div class="choose__content">
-                                <h2 class="title">
-                                    Lifetime free transaction 
-                                </h2>
-                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
-                            </div>
-                        </div>
-                        <div class="list__item choose__item">
-                            <div class="start">
-                                <div class="choose__icon">
+                            <!-- slide 3 -->
+                            <div class="slide">
+                                <div class="slide__img">
                                     <img src="./resource/img/choose_icon03.svg" alt="">
                                 </div>
-                            </div>
-                            <div class="choose__content">
-                                <h2 class="title">
-                                    Lifetime free transaction 
-                                </h2>
-                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
-                            </div>
-                        </div>
-                        <div class="list__item choose__item">
-                            <div class="start">
-                                <div class="choose__icon">
-                                    <img src="./resource/img/choose_icon04.svg" alt="">
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Sercurity & control over money</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
                                 </div>
                             </div>
-                            <div class="choose__content">
-                                <h2 class="title">
-                                    Lifetime free transaction 
-                                </h2>
-                                <p  class="text--grey line--height">Add new, trending and rare artwork to your collection</p>
+                            <!-- slide 4 -->
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon04.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Mobile payment make easy</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
                             </div>
+                            <!-- slide 1 first-clone-->
+                            <div class="slide" id="first-clone">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon01.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Lifetime free transaction</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon02.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Protect the indentity</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon03.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Sercurity & control over money</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./resource/img/choose_icon04.svg" alt="">
+                                </div>
+                                <div class="slide__script">
+                                    <div class="slide__script--title">
+                                        <h2>Mobile payment make easy</h2>
+                                    </div>
+                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div id="bar"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- section sales -->
     <section id="sales">
         <div class="sales-container parallax">
             <div class="row--center">
                 <div class="col sale__col__left FadeRight">
                     <ul class="nav-tabs">
-                        <li id ="tab1__name"class="nav-tab__item tab--selected" onclick="selectTab1()">
+                        <li id="tab1__name" class="nav-tab__item tab--selected" onclick="selectTab1()">
                             FUNDING ALLOCATION
                         </li>
-                        <li id ="tab2__name" class="nav-tab__item" onclick="selectTab2()">
+                        <li id="tab2__name" class="nav-tab__item" onclick="selectTab2()">
                             TOKEN ALLOCATION
                         </li>
                     </ul>
-                    <!-- *todo -->
+                    <!-- *todo smooth transform  -->
                     <div class="tab tab1">
                         <h2 class="tab__title">
                             1 NCL = 0.0863 BTC
                         </h2>
                         <p class="tab__content text--grey line--height">
                             The World's 1st ICO Platform That Offers Rewards
-                             and The platform helps investors to make
+                            and The platform helps investors to make
                             easy to purchase and sell their tokens
                         </p>
                         <div class="btn">
@@ -323,7 +382,6 @@
                             The World's 1st ICO Platform That Offers Rewards and The platform helps investors to make
                             easy to purchase and sell their tokens
                         </p>
-                        <!-- *! warning -->
                         <div class="btn">
                             <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
                         </div>
@@ -333,7 +391,7 @@
                 <div class="col sales__col__right FadeLeft">
                     <div class="chart">
                         <div class="chart__img">
-                            <img src="./resource/img/chart.png" class="img--fit"alt="">
+                            <img src="./resource/img/chart.png" class="img--fit" alt="">
                         </div>
                         <ul class="chart__details">
                             <li>Contingency:70%</li>
@@ -348,28 +406,68 @@
             </div>
         </div>
     </section>
+    <!-- section roadmap -->
     <section id="roadmap">
-        <div class="roadmap__title">
-            <div class="title title--center">
-                <p class="title__name title--center">
-                    OUR ROADMAP
-                </p>
-                
+        <div class="roadmap__haft--top">
+            <div class="roadmap__title">
+                <div class="title title--center">
+                    <p class="title__name title--center">
+                        OUR ROADMAP
+                    </p>
+
+                </div>
+                <div class="title title--center">
+                    <h2 class="title__content" style="text-align: center;">
+                        Bigtech Strategy And<br> Project <span class="text--bold--blue">Plan</span>
+                    </h2>
+                </div>
             </div>
-            <div class="title title--center">
-                <h2 class="title__content" style="text-align: center;">
-                    Bigtech Strategy And<br> Project <span class="text--bold--blue">Plan</span>
-                </h2>
+        </div>
+        <div class="roadmap__halft--bottom">
+            <div class="container document">
+                <div class="row--center document__row">
+                    <div class="col FadeRight doc__col">
+                        <img src="./resource/img/document_img.png" alt="">
+                    </div>
+                    <div class="col FadeLeft doc__col">
+                        <!-- document title -->
+                        <div class="doc__title">
+                            <div class="title">
+                                <p class="title__name">
+                                    WHITEPAPER
+                                </p>
+                                <h2 class="title__content">
+                                    Read Bigtech<span class="text--bold--blue">Documents</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- document list -->
+                        <div class="doc__list">
+                            <ul>
+                                <li class="doc__list-item">White Paper</li>
+                                <li class="doc__list-item">Privaci&Policy</li>
+                                <li class="doc__list-item">Terms Of Coin Sale</li>
+                                <li class="doc__list-item">One Paper</li>
+                            </ul>
+                        </div>
+                        <!-- document button -->
+                        <div class="btn doc__btn">
+                            <button class="btn__content" type="submit">DOWNLOAD DOC</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- section team -->
     <section id="team">
         <div class="roadmap__title">
             <div class="title title--center">
                 <p class="title__name title--center">
                     OUR TEAM
                 </p>
-                
+
             </div>
             <div class="title title--center">
                 <h2 class="title__content" style="text-align: center;">
@@ -390,11 +488,12 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-             <!-- member 2 -->
+            <!-- member 2 -->
             <div class="member">
                 <div class="member__avatar ">
                     <img src="./resource/img/team_img02.png" alt="">
@@ -406,12 +505,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 3 -->
-              <div class="member">
+            <!-- member 3 -->
+            <div class="member">
                 <div class="member__avatar">
                     <img src="./resource/img/team_img03.png" alt="">
                 </div>
@@ -422,12 +522,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 4 -->
-              <div class="member">
+            <!-- member 4 -->
+            <div class="member">
                 <div class="member__avatar ">
                     <img src="./resource/img/team_img04.png" alt="">
                 </div>
@@ -438,12 +539,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 5 -->
-              <div class="member">
+            <!-- member 5 -->
+            <div class="member">
                 <div class="member__avatar">
                     <img src="./resource/img/team_img05.png" alt="">
                 </div>
@@ -454,12 +556,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 6 -->
-              <div class="member">
+            <!-- member 6 -->
+            <div class="member">
                 <div class="member__avatar     ">
                     <img src="./resource/img/team_img06.png" alt="">
                 </div>
@@ -470,12 +573,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 7 -->
-              <div class="member">
+            <!-- member 7 -->
+            <div class="member">
                 <div class="member__avatar        ">
                     <img src="./resource/img/team_img07.png" alt="">
                 </div>
@@ -486,12 +590,13 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-              <!-- member 8 -->
-              <div class="member">
+            <!-- member 8 -->
+            <div class="member">
                 <div class="member__avatar  ">
                     <img src="./resource/img/team_img08.png" alt="">
                 </div>
@@ -502,19 +607,21 @@
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="social__link team__social-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social__link team__social-link"><a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <!-- section contact -->
     <section id="contact">
         <div class="contact__title">
             <div class="title title--center">
                 <p class="title__name title--center">
                     CONTACT US
                 </p>
-                
+
             </div>
             <div class="title title--center">
                 <h2 class="title__content" style="text-align: center;">
@@ -573,60 +680,60 @@
             <button class="btn">
                 <a href="#">
                     <i class="fas fa-arrow-up" href="#"></i>
-                </a> 
+                </a>
             </button>
         </div>
         <div class="footer__content">
             <!-- *todo animation FadeUp here -->
-                <div class="ftcontent__col ftcontent__col--25">
-                    <img src="./resource/img/logo.png" alt="">
-                    <p class="text--grey">A new to make the payments easy, reliable and 100% secure. Claritatem itamconse quat. Exerci tatinulla</p>
-                    <!-- *todo make social list here -->
-                    <ul class="social__list">
-                        <li class="item--circle"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li class="item--circle"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="item--circle"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li class="item--circle"><a href="#"><i class="fab fa-skype"></i></a></li>
+            <div class="ftcontent__col ftcontent__col--25">
+                <img src="./resource/img/logo.png" alt="">
+                <p class="text--grey">A new to make the payments easy, reliable and 100% secure. Claritatem itamconse
+                    quat. Exerci tatinulla</p>
+                <ul class="social__list">
+                    <li class="item--circle"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class="item--circle"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="item--circle"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="item--circle"><a href="#"><i class="fab fa-skype"></i></a></li>
+                </ul>
+            </div>
+            <div class="ftcontent__col ftcontent__col--25">
+                <div class="footer__link">
+                    <h4 class="ftcol__title">USEFUL LINKS</h4>
+                    <ul>
+                        <li><a class="text--grey" href="#">Contact us</a></li>
+                        <li><a class="text--grey" href="#">How it Works</a></li>
+                        <li><a class="text--grey" href="#">Create</a></li>
+                        <li><a class="text--grey" href="#">Explore</a></li>
+                        <li><a class="text--grey" href="#">Terms&Services</a></li>
                     </ul>
                 </div>
-                <div class="ftcontent__col ftcontent__col--25">
-                    <div class="footer__link">
-                        <h4 class="ftcol__title">USEFUL LINKS</h4>
-                        <ul>
-                            <li><a class="text--grey" href="#">Contact us</a></li>
-                            <li><a class="text--grey" href="#">How it Works</a></li>
-                            <li><a class="text--grey" href="#">Create</a></li>
-                            <li><a class="text--grey" href="#">Explore</a></li>
-                            <li><a class="text--grey" href="#">Terms&Services</a></li>
-                        </ul>
+            </div>
+            <div class="ftcontent__col ftcontent__col--10">
+                <div class="footer__link">
+                    <h4 class="ftcol__title">COMMUNITY</h4>
+                    <ul>
+                        <li><a class="text--grey" href="#">Help Center</a></li>
+                        <li><a class="text--grey" href="#">Partners</a></li>
+                        <li><a class="text--grey" href="#">Suggestions</a></li>
+                        <li><a class="text--grey" href="#">Blog</a></li>
+                        <li><a class="text--grey" href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftcontent__col ftcontent__col--40">
+                <div class="footer__letter">
+                    <div class="letter--top">
+                        <h4 class="ftcol__title">SUBCRIBE NEWSLETTER</h4>
+                        <p class="text--grey">Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                    </div>
+                    <div class="letter--bottom">
+                        <form action="#">
+                            <input type="email" placeholder="Info@gmail.com" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
                     </div>
                 </div>
-                <div class="ftcontent__col ftcontent__col--10">
-                    <div class="footer__link">
-                        <h4 class="ftcol__title">COMMUNITY</h4>
-                        <ul>
-                            <li><a class="text--grey" href="#">Help Center</a></li>
-                            <li><a class="text--grey" href="#">Partners</a></li>
-                            <li><a class="text--grey" href="#">Suggestions</a></li>
-                            <li><a class="text--grey" href="#">Blog</a></li>
-                            <li><a class="text--grey" href="#">Newsletter</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="ftcontent__col ftcontent__col--40">
-                    <div class="footer__letter">
-                        <div class="letter--top">
-                            <h4 class="ftcol__title">SUBCRIBE NEWSLETTER</h4>
-                            <p class="text--grey">Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
-                        </div>
-                        <div class="letter--bottom">
-                            <form action="#">
-                                <input type="email" placeholder="Info@gmail.com" required>
-                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </div>
         <div class="footer__bottom">
             <div class="copyright">
@@ -643,4 +750,6 @@
     </div>
 </footer>
 <script src="./resource/js/myScript.js"></script>
+<script src="./resource/js/SlickSlider.js"></script>
+
 </html>

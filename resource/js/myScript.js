@@ -8,8 +8,8 @@ function activateMenu(){
     li.forEach(ltx=>ltx.classList.remove("activeSection"));
     li[len].classList.add("activeSection");
 }
-activateMenu();
-window.addEventListener("scroll",activateMenu);
+// activateMenu();
+// window.addEventListener("scroll",activateMenu);
 
 function showMobileMenu(){
     let menu__mobile =  document.querySelector(".menu__mobile");
@@ -45,15 +45,10 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  // document.querySelector(".day span").innerHTML = days;
-  // document.querySelector(".hour span").innerHTML = hours;
-  // document.querySelector(".minute span").innerHTML = minutes;
-  // document.querySelector(".second span").innerHTML = seconds;
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
+  document.getElementById("day").innerHTML = days;
+  document.getElementById("hour").innerHTML = hours;
+  document.getElementById("minute").innerHTML = minutes;
+  document.getElementById("second").innerHTML = seconds;
 }, 1000);
 
 // select tab in section sales

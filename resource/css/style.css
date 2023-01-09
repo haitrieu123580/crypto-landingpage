@@ -177,7 +177,8 @@ html,body {
     flex-direction: column;
     width: 50%;
     justify-content: center;
-
+    margin: 20px auto;
+    padding: 0 50px;
 }
 
 .list {
