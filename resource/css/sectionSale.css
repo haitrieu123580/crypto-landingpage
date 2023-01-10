@@ -47,8 +47,7 @@
     display: none;
 }
 #sales .row--center{
-    padding-top: 130px;
-    padding-bottom: 130px;
+   
 }
 #sales .btn:hover .btn__content {
     color: white;
