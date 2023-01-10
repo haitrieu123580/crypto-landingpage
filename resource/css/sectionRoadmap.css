@@ -18,6 +18,83 @@
     opacity: .8;
 
 }
+/* roadmap list */
+.roadmap__haft--top{
+    position: relative;
+}
+/* thanh doc xam o giua */
+.roadmap__haft--top::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+    opacity: 0.1;
+}
+.map__container{
+    display: flex;
+    padding: 0;
+    min-height: 490px;
+    margin: 10px 0 0;
+    justify-content: flex-end;
+}
+
+
+.map__item--title{
+    display: inline-block;
+    color: #00C4F4;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    letter-spacing: 0.1em;
+}
+.map__item{
+    margin: 0 10px;
+    width: 370px;
+    /* display: flex;
+    width: 370px;
+    flex: 0 0 auto;
+    height: 305px;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: flex-start; */
+    /* *!warning */
+    /* position: absolute;
+    top: 38.5%; */
+}
+
+.map__item--content{
+    position: relative;
+    margin-left: 57px;
+    padding-left: 17px;
+    padding-top: 100px;
+}
+.map__item--content .dot{
+    position: absolute;
+    left: -9px;
+    top: 0;
+}
+.map__item--content::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #00C4F4;
+}
+.map__item--content .title{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.map__item--content span{
+    display: block;
+    margin: 10px 0;
+}
+
+
 /* roadmap document */
 .doc__col{
     padding: 0 50px;

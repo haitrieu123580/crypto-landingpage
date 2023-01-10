@@ -102,16 +102,18 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.chart__details li{
+.chart__details .dot{
     width: 50%;
     text-align: left;
     font-size: 14px;
     font-weight: 500;
     padding-left: 30px;
-    position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
-.chart__details li::after{
+.dot{
+    position: relative;
+}
+.dot::after{
     content: "";
     position: absolute;
     left: 0;
@@ -120,22 +122,33 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-}
-.chart__details li:nth-child(1)::after{
-    background-color: rgb(0, 95, 115);
-}
-.chart__details li:nth-child(2)::after{
-    background-color: var(--color-red);
-}
-.chart__details li:nth-child(3)::after{
-    background-color: var(--color-green);
-}
-.chart__details li:nth-child(4)::after{
-    background-color: var(--color-yellow);
-}
-.chart__details li:nth-child(5)::after{
     background-color: var(--color-blue);
 }
-.chart__details li:nth-child(6)::after{
+/* .chart__details li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+} */
+.chart__details .dot:nth-child(1)::after{
+    background-color: rgb(0, 95, 115);
+}
+.chart__details .dot:nth-child(2)::after{
+    background-color: var(--color-red);
+}
+.chart__details .dot:nth-child(3)::after{
+    background-color: var(--color-green);
+}
+.chart__details .dot:nth-child(4)::after{
+    background-color: var(--color-yellow);
+}
+.chart__details .dot:nth-child(5)::after{
+    background-color: var(--color-blue);
+}
+.chart__details .dot:nth-child(6)::after{
     background-color:rgb(0, 127, 244);
 }
