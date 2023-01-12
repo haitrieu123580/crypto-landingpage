@@ -74,44 +74,45 @@
                             <li class="btn"><a href="#" class="btn__content">BUY NOW</a></li>
                         </ul>
                     </div>
+                    
                 </nav>
             </div>
             <!-- mobile menu icon and vertical menu -->
             <!-- todo subitem -->
             <div class="mobile__nav__toggler">
                 <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
-                <div class="menu__mobile">
-                    <nav class="menu-box">
 
-                        <div class="vertical-menu__logo">
-                            <img src="./resource/img/logo.png" alt="">
-                            <i class="fa-solid fa-times" style="color: #00c4f4;" onclick="hideMobileMenu()"></i>
-                        </div>
-
-                        <div class="vertical-menu">
-                            <ul class="vertical__list">
-                                <li><a href="#home" class="section-link">HOME</a></li>
-                                <li><a href="#about" class="section-link">ABOUT US</a></li>
-                                <li><a href="#sales" class="section-link">SALES</a></li>
-                                <li><a href="#roadmap" class="section-link">ROADMAP</a></li>
-                                <li><a href="#blog" class="section-link">BLOG</a></li>
-                                <li><a href="#contact" class="section-link">CONTACT US</a></li>
-                            </ul>
-                        </div>
-                        <div class="social-menu">
-                            <ul class="social__list">
-                                <li class="social__link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="social__link"><a href=""><i class="fab fa-twitter"></i></a></li>
-                                <li class="social__link"><a href=""><i class="fab fa-instagram"></i></a></li>
-                                <li class="social__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="social__link"><a href=""><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- filter background -->
-                    </nav>
-                </div>
             </div>
-            <div class="menu__background"></div>
+            <div class="menu__mobile">
+                <nav class="menu-box">
+
+                    <div class="vertical-menu__logo">
+                        <img src="./resource/img/logo.png" alt="">
+                        <i class="fa-solid fa-times" style="color: #00c4f4;" onclick="hideMobileMenu()"></i>
+                    </div>
+
+                    <div class="vertical-menu">
+                        <ul class="vertical__list">
+                            <li><a href="#home" class="section-link">HOME</a></li>
+                            <li><a href="#about" class="section-link">ABOUT US</a></li>
+                            <li><a href="#sales" class="section-link">SALES</a></li>
+                            <li><a href="#roadmap" class="section-link">ROADMAP</a></li>
+                            <li><a href="#blog" class="section-link">BLOG</a></li>
+                            <li><a href="#contact" class="section-link">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-menu">
+                        <ul class="social__list">
+                            <li class="social__link"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social__link"><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li class="social__link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="social__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="social__link"><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu__background" onclick="hideMobileMenu()"></div>
         </div>
 
     </header>
@@ -159,11 +160,11 @@
             <!-- about -->
             <div class=" corp corp__info">
                 <div class="row--center info">
-                    <div class="col col__left info__col--img FadeRight">
+                    <div class="col col__left info__col--img hide">
                         <img src="./resource/img/about_img01.png" alt="about_img01" class="about_img01 img--fit">
                         <img src="./resource/img/about_img02.png" alt="about_img02" class="about_img02 img--fit">
                     </div>
-                    <div class="col col__right info__col--descript FadeLeft">
+                    <div class="col col__right info__col--descript hide">
                         <div class="title">
                             <p class="title__name">
                                 WHO WE ARE
@@ -350,7 +351,7 @@
     <section id="sales">
         <div class="sales-container parallax">
             <div class="row--center">
-                <div class="col sale__col__left FadeRight">
+                <div class="col sale__col__left col__left hide">
                     <ul class="nav-tabs">
                         <li id="tab1__name" class="nav-tab__item tab--selected" onclick="selectTab1()">
                             FUNDING ALLOCATION
@@ -362,7 +363,7 @@
                     <!-- *todo smooth transform  -->
                     <div class="tab tab1">
                         <h2 class="tab__title">
-                            1 NCL = 0.0863 BTC
+                            1 CNL = 0.0863 BTC
                         </h2>
                         <p class="tab__content text--grey line--height">
                             The World's 1st ICO Platform That Offers Rewards
@@ -376,7 +377,7 @@
                     </div>
                     <div class="tab tab2">
                         <h2 class="tab__title">
-                            2 NCL = 0.0967 BTC
+                            2 CNL = 0.0967 BTC
                         </h2>
                         <p class="tab__content text--grey line--height">
                             The World's 1st ICO Platform That Offers Rewards and The platform helps investors to make
@@ -388,7 +389,7 @@
 
                     </div>
                 </div>
-                <div class="col sales__col__right FadeLeft">
+                <div class="col sales__col__right col__right hide">
                     <div class="chart">
                         <div class="chart__img">
                             <img src="./resource/img/chart.png" class="img--fit" alt="">
@@ -421,10 +422,10 @@
                 </h2>
             </div>
         </div>
-        <div class="roadmap__haft--top">
+        <div class="roadmap__haft--top" >
 
             <!-- map -->
-            <div class="map__container">
+            <div class="map__container" id="style-6">
                 <!-- map item -->
                 <!-- item 1 -->
                 <div class="map__item">

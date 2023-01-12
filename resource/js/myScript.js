@@ -4,23 +4,24 @@ const sec = document.querySelectorAll("section");
 
 function activateMenu(){
     let len = sec.length;
-    while(--len && window.scrollY+97< sec[len].offsetTop){}
+    
+    while(--len && window.scrollY+90< sec[len].offsetTop){}
     li.forEach(ltx=>ltx.classList.remove("activeSection"));
     li[len].classList.add("activeSection");
 }
-// activateMenu();
-// window.addEventListener("scroll",activateMenu);
+activateMenu();
+window.addEventListener("scroll",activateMenu);
 
 function showMobileMenu(){
     let menu__mobile =  document.querySelector(".menu__mobile");
-    menu__mobile.style.transform= "translateX(-400px)";
-    menu__mobile.style.display = "block";
+    menu__mobile.style.transform= "translateX(0)";
+    menu__mobile.style.display = "inline-block";
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.add("visible");
 }
 function hideMobileMenu(){
     let menu__mobile = document.querySelector(".menu__mobile");
-    menu__mobile.style.transform= "translateX(400px)";
+    menu__mobile.style.transform= "translateX(101%)";
     let body = document.querySelector("body");
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.remove("visible");
@@ -70,3 +71,20 @@ function selectTab2(){
   document.querySelector(".tab1").style.display = "none";
   // document.querySelector(".tab--selected").style.opacity = "1";
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-animation");
+      // console.log(entry.target)
+    } else {
+      entry.target.classList.remove("show-animation");
+    }
+  });
+});
+
+let show = document.querySelectorAll(".hide")
+show.forEach((col)=>{
+  observer.observe(col)
+})
+// console.log(show)

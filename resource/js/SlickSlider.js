@@ -48,7 +48,6 @@ slide.addEventListener('transitionend', () => {
   }
 });
 let bar= document.querySelector("#bar");
-console.log(bar)
 let barWidth = bar.clientWidth;
 bar.style.width=0;
 // console.log(barWidth)

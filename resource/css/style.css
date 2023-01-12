@@ -5,9 +5,18 @@
     --color-red: #FF1D45;
     --color-grey: #A5B5C3;
 }
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+   
+}
+
+body {
+    background-color: #030B15;
+    
 }
 
 p {
@@ -241,4 +250,19 @@ html,body {
         opacity: 1;
         transform: translateY(0);
       }
+}
+.col__left{
+    transform: translateX(-100px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.col__right{
+    transform: translateX(100px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+section{
+    overflow: hidden;
 }

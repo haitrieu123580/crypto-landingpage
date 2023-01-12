@@ -13,7 +13,7 @@ body {
 header {
     color: white;
     background-color: #030b15;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1111;
@@ -88,24 +88,6 @@ a {
     position: relative;
 }
 .sub-menu {
-    /* position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    min-width: 230px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    background: #0B1D33;
-    margin: 0;
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 30px 70px 0px rgb(0 0 0 / 15%);
-    border-radius: 0;
-    padding: 18px 0;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 9; */
     position: absolute;
     left: 0;
     right: 0;
@@ -268,19 +250,19 @@ a {
 
 /* **mobile menu */
 .menu__mobile {
-    display:block;
+    display:inline-block;
     width: 320px;
     background-color: #0B1D33;
     position: fixed;
     top: 0;
-    right:-400px;
+    right: 0;
+    /* right:-400px; */
     /* visibility: hidden;
     opacity: 0; */
     height: 100%;
-    overflow: auto;
     transition: all 0.7s;
     z-index: 51;
-    /* transform: translateX(101%); */
+    transform: translateX(101%);
 }
 
 .vertical-menu__logo {
