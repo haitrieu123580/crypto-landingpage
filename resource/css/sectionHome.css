@@ -18,7 +18,7 @@
 
 #home {
     position: relative;
-    background-image: url(/resource/img/banner_one.jpg);
+    background-image: url(../img/banner_one.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
