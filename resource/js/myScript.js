@@ -87,4 +87,31 @@ let show = document.querySelectorAll(".hide")
 show.forEach((col)=>{
   observer.observe(col)
 })
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-animation2");
+      // console.log(entry.target)
+    } else {
+      entry.target.classList.remove("show-animation2");
+    }
+  });
+});
+
+let show2 = document.querySelectorAll(".hide2")
+show2.forEach((col)=>{
+  observer2.observe(col)
+})
 // console.log(show)
+
+
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > 120 ||
+    document.documentElement.scrollTop > 120
+  ) {
+    document.querySelector(".head").classList.add("header--sticky");
+  } else {
+    document.querySelector(".head").classList.remove("header--sticky");
+  }
+});

@@ -42,7 +42,7 @@ slide.addEventListener('transitionend', () => {
 
   if (slides[index].id === "last-clone") {
     slide.style.transition = 'none';
-    index = slides.length - 2;
+    index = slides.length - 2;  
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
     bar.style.width=0;
   }

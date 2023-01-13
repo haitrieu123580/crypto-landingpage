@@ -42,12 +42,20 @@
         margin-bottom: 40px;
         font-size: 45px;
     }
+    .banner-progress{
+        min-width: 760px;
+        margin: 0 auto;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .section-container{
         max-width: 1096px;
+    }
+    .banner-progress{
+        min-width: 760px;
+        margin: 0 auto;
     }
     .banner-content h2{
         margin-bottom: 45px;

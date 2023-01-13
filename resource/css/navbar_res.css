@@ -1,5 +1,4 @@
 
- /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 768px) {
     header .row{
         padding: 0 20px;
@@ -27,13 +26,12 @@
         display: none;
     }
     .mobile__nav__toggler i{
-        /* padding-right: 30px; */
+        
     }
 
 
  }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 768px) {
     .head__lang::before{
         display: none;
@@ -62,10 +60,6 @@
     }
     
  }
-
-
-
- /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     .menu__action .btn::before{
         display: inline-block;
@@ -76,7 +70,7 @@
     .menu-warp{
         width: 100%;
     }
-    /* *! */
+   
     .menu-warp nav {
         justify-content: space-around;
     }
@@ -95,7 +89,6 @@
     }
  }
 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
     .head__lang::before{
         display: inline-block;

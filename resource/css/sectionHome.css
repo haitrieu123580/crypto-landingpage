@@ -59,7 +59,7 @@
 }
 .shape3{
     right: 0;
-    bottom: 0;
+    bottom:70px;
     animation: moveUp 5s linear 0s infinite;
 }
 @keyframes moveUp {

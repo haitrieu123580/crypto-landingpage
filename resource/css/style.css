@@ -40,6 +40,8 @@ html,body {
 }
 
 .btn__content {
+    user-select: none;
+    -moz-user-select: none;
     background: #040E18;
     border-radius: 70px;
     border: 2px solid transparent;
@@ -48,13 +50,22 @@ html,body {
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 25px 50px;
     text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 1s 0s;
     vertical-align: middle;
     white-space: nowrap;
+    box-shadow: 0px 6px 22px rgb(6 34 51 / 22%);
     background-clip: padding-box;
     position: relative;
-    padding: 25px 50px;
+
 }
+
 
 .btn__content::after {
     content: "";
@@ -66,17 +77,16 @@ html,body {
     margin: -2px;
     background: linear-gradient(90deg, rgba(0, 196, 244, 1) 0%, rgba(4, 12, 21, 1) 49%, rgba(0, 196, 244, 1) 100%);
     border-radius: 70px;
-    transition: all 0.4s ease 0s;
+    transition: all 1s ease 0s;
     z-index: -1;
+
 }
 
 .btn:hover .btn__content {
+    border: 2px solid var(--color-blue);
     color: var(--color-blue);
 }
 
-.btn:hover .btn__content::after {
-    background: linear-gradient(90deg, rgba(0, 196, 244, 1) 0%, rgba(0, 196, 244, 1), rgba(0, 196, 244, 1) 100%);
-}
 
 .btn--large {}
 
@@ -213,9 +223,7 @@ html,body {
     transform: 1s;
     animation: FadeLeft 2s;
 }
-.FadeDown{
-    animation: 1s ease-in-out 0s normal none 1 running fadeDown;
-}
+
 @keyframes FadeRight {
     0% {
         opacity: 0;
@@ -240,29 +248,39 @@ html,body {
     }
 
 }
-@keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-    
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-}
+
 .col__left{
     transform: translateX(-100px);
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    transition-delay: 0.2s;
 }
 .col__right{
     transform: translateX(100px);
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    transition-delay: 0.2s;
 }
+.show-animation{
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
 section{
     overflow: hidden;
+}
+.colUp{
+    transform: translateY(100px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+.show-animation2{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
 }

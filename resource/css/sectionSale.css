@@ -26,6 +26,7 @@
     margin: 0;
     position: relative;
     font-weight: 600;
+    cursor:pointer;
 }
 .nav-tab__item:nth-child(1){
     margin-right:10%;
@@ -50,7 +51,8 @@
    
 }
 #sales .btn:hover .btn__content {
-    color: white;
+    border: none;
+    color: white
 }
 .btn--blue{
     background-color: var(--color-blue);
