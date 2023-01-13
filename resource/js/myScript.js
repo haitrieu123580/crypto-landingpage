@@ -26,6 +26,21 @@ function hideMobileMenu(){
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.remove("visible");
 }
+// show submenu mobile
+let linkDownBtns = document.querySelectorAll(".btnSubmenu");
+function sidebarLiDown(){
+    for(let linkDownBtn of linkDownBtns){
+        linkDownBtn.onclick=(e)=>{
+            let includeLinkDown = e.target.parentElement.parentElement;
+            let ul = includeLinkDown.querySelector(".submenu--vertical")
+            ul.classList.toggle("showNav");
+            linkDownBtn.classList.toggle("rotateUp");
+        }
+    }
+}
+sidebarLiDown();
+
+
 
 //countdown timer
 let countDownDate = new Date("Jan 22, 2023 0:0:0").getTime();
@@ -87,6 +102,7 @@ let show = document.querySelectorAll(".hide")
 show.forEach((col)=>{
   observer.observe(col)
 })
+
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -110,8 +126,8 @@ window.addEventListener("scroll", () => {
     document.body.scrollTop > 120 ||
     document.documentElement.scrollTop > 120
   ) {
-    document.querySelector(".head").classList.add("header--sticky");
+    document.querySelector(".head").classList.add("header--fixed");
   } else {
-    document.querySelector(".head").classList.remove("header--sticky");
+    document.querySelector(".head").classList.remove("header--fixed");
   }
 });

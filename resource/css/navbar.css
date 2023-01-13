@@ -13,24 +13,19 @@ body {
 header {
     color: white;
     background-color: #030b15;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1111;
-    visibility: visible;
 }
 .head {
     color: white;
     background-color: #030b15;
     width: 100%;
     z-index: 1111;
-    position: sticky;
+    position: relative;
     visibility: visible;
     /* position: relative; */
     height: 100px;
 
 }
-.header--sticky{
+.header--fixed{
     position: fixed;
     animation: fadeDown 1s forwards ease-out;
     width: 100%;
@@ -281,7 +276,7 @@ a {
     opacity: 0; */
     height: 100%;
     transition: all 0.7s;
-    z-index: 51;
+    z-index: 11113;
     transform: translateX(101%);
 }
 
@@ -315,7 +310,6 @@ a {
 
 .vertical__list li {
     border-bottom: 1px solid rgb(255 255 255 / 6%);
-    ;
 }
 
 .vertical__list li:nth-child(1) {
@@ -351,7 +345,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 50;
+    z-index: 11112;
     transition: all 0.7s ease;
     opacity: 0;
     visibility: hidden;
@@ -361,3 +355,61 @@ a {
     opacity: 0.8;
     visibility: visible;
 }
+/* submenu in mobile menu */
+.vertical-menu>li{
+    height: 45px;
+}
+.menu-item-has-children{
+    position: relative;
+}
+.btnSubmenu{
+    position: absolute;
+    background-color: #00C4F4;
+    top: 10px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.btnSubmenu__icon{
+    font-size: 14px;
+    font-weight: 900;
+    transition: all 0.6s;
+}
+
+.submenu--vertical{
+    display: none;
+}
+.submenu--vertical li{
+    display: block;
+}
+.submenu--vertical li .section-link{
+    display: block;
+    width: 100%;
+    padding-left: 30px;
+}
+/* css when click btnSubmenu */
+.btnSubmenu.rotateUp{
+    transform: rotate(90deg);
+}
+
+.submenu--vertical.showNav{
+    display: block;
+    animation: dropDown 0.5s forwards;
+}
+@keyframes dropDown {
+    0%{
+        visibility: visible;
+        opacity:0;
+    }
+    100%{
+        visibility: visible;
+        opacity:1;
+    }
+}
+

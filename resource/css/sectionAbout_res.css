@@ -18,7 +18,7 @@
     }
     .slide {
         min-width: 100%;
-        margin: 0 5px;
+        /* margin: 0 5px; */
     }
 }
 
@@ -42,7 +42,7 @@
     }
     .slide {
         min-width: 50%;
-        margin: 0 5px;
+        /* margin: 0 5px; */
     }
 }
 
@@ -71,7 +71,7 @@
     /* slider */
     .slide {
         min-width: 30%;
-        margin: 0 5px;
+        /* margin: 0 5px; */
     }
 }
 
@@ -99,9 +99,9 @@
     }
     .slide {
         min-width: 25%;
-        margin: 0 10px;
+        /* margin: 0 10px; */
     }
     #bar{
-        width: 25%;
+        width:25%
     }
 }

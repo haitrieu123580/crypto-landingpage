@@ -30,59 +30,59 @@
 </head>
 
 <body>
-   <!-- header area -->
-   <header>
-    <div class="row row--space">
-        <div class="menu-warp">
-            <nav>
-                <!-- logo 1 -->
-                <div class="menu__logo">
-                    <img src="./resource/img/logo.png" alt="">
-                </div>
-                <!-- main menu -->
-                <div class="menu__navbar">
-                    <ul class="navigation">
-                        <li class="link menu__container"><a href="#home" class="section-link">HOME</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item"><a href="index.html">HOME ONE</a></li>
-                                <li class="sub-menu__item"><a href="#">HOME TWO</a></li>
-                            </ul>
-                        </li>
-                        <li class="link"><a href="#about" class="section-link">ABOUT US</a></li>
-                        <li class="link"><a href="#sales" class="section-link">SALES</a></li>
-                        <li class="link"><a href="#roadmap" class="section-link">ROADMAP</a></li>
-                        <li class="link menu__container"><a href="#blog" class="section-link">BLOG</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item"><a href="index.html">OUR BLOG</a></li>
-                                <li class="sub-menu__item"><a href="#">BLOG DETAILS</a></li>
-                            </ul>
-                        </li>
-                        <li class="link"><a href="#contact" class="section-link">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <!-- action menu -->
-                <div class="menu__action">
-                    <ul>
-                        <li class="head__lang">
-                            <ul class="lang__list">
-                                <li class="lang"><a href="#">IND</a></li>
-                                <li class="lang"><a href="#">BNG</a></li>
-                                <li class="lang"><a href="#">TUR</a></li>
-                                <li class="lang"><a href="#">CIN</a></li>
-                            </ul>
-                        </li>
-                        <li class="btn"><a href="#" class="btn__content">BUY NOW</a></li>
-                    </ul>
-                </div>
-                
-            </nav>
-        </div>
-        <div class="mobile__nav__toggler">
-            <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
+    <!-- header area -->
+    <header>
+        <div class="row row--space head">
+            <div class="menu-warp">
+                <nav>
+                    <!-- logo 1 -->
+                    <div class="menu__logo">
+                        <img src="./resource/img/logo.png" alt="">
+                    </div>
+                    <!-- main menu -->
+                    <div class="menu__navbar">
+                        <ul class="navigation">
+                            <li class="link menu__container"><a href="#home" class="section-link">HOME</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="index.html">HOME ONE</a></li>
+                                    <li class="sub-menu__item"><a href="#">HOME TWO</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="#about" class="section-link">ABOUT US</a></li>
+                            <li class="link"><a href="#sales" class="section-link">SALES</a></li>
+                            <li class="link"><a href="#roadmap" class="section-link">ROADMAP</a></li>
+                            <li class="link menu__container"><a href="#blog" class="section-link">BLOG</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="index.html">OUR BLOG</a></li>
+                                    <li class="sub-menu__item"><a href="#">BLOG DETAILS</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="#contact" class="section-link">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <!-- action menu -->
+                    <div class="menu__action">
+                        <ul>
+                            <li class="head__lang">
+                                <ul class="lang__list">
+                                    <li class="lang"><a href="#">IND</a></li>
+                                    <li class="lang"><a href="#">BNG</a></li>
+                                    <li class="lang"><a href="#">TUR</a></li>
+                                    <li class="lang"><a href="#">CIN</a></li>
+                                </ul>
+                            </li>
+                            <li class="btn"><a href="#" class="btn__content">BUY NOW</a></li>
+                        </ul>
+                    </div>
 
+                </nav>
+            </div>
+            <div class="mobile__nav__toggler">
+                <i class="fa-solid fa-bars" style=" font-size: 30px;" onclick="showMobileMenu()"></i>
+
+            </div>
         </div>
-    </div>
-    <!-- mobile menu icon and vertical menu -->
+        <!-- mobile menu icon and vertical menu -->
         <!-- todo subitem -->
 
         <div class="menu__mobile">
@@ -95,11 +95,32 @@
 
                 <div class="vertical-menu">
                     <ul class="vertical__list">
-                        <li><a href="#home" class="section-link">HOME</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#home" class="section-link">HOME</a>
+                            <ul class="submenu--vertical">
+                                <li><a href="" class="section-link">Home one</a></li>
+                                <li><a href="" class="section-link">Home two</a></li>
+                            </ul>
+                            <div class="btnSubmenu">
+                                <i class="fas fa-angle-down btnSubmenu__icon "></i>
+                            </div>
+                        </li>
+
                         <li><a href="#about" class="section-link">ABOUT US</a></li>
                         <li><a href="#sales" class="section-link">SALES</a></li>
                         <li><a href="#roadmap" class="section-link">ROADMAP</a></li>
-                        <li><a href="#blog" class="section-link">BLOG</a></li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#blog" class="section-link">BLOG</a>
+                            <ul class="submenu--vertical">
+                                <li><a href="" class="section-link">Our Blog</a></li>
+                                <li><a href="" class="section-link">Blog Details</a></li>
+                            </ul>
+                            <div class="btnSubmenu">
+                                <i class="fas fa-angle-down btnSubmenu__icon "></i>
+                            </div>
+                        </li>
+
                         <li><a href="#contact" class="section-link">CONTACT US</a></li>
                     </ul>
                 </div>
@@ -116,7 +137,7 @@
         </div>
         <div class="menu__background" onclick="hideMobileMenu()"></div>
 
-</header>
+    </header>
     <!-- section 01-home -->
     <section id="home" class="banner-home">
         <div class="container">
@@ -231,18 +252,7 @@
                 <div class="row">
                     <div class="list slide-container">
                         <div class="slides">
-                            <!-- slide 1 last-clone-->
-                            <div class="slide" id="last-clone">
-                                <div class="slide__img">
-                                    <img src="./resource/img/choose_icon01.svg" alt="">
-                                </div>
-                                <div class="slide__script">
-                                    <div class="slide__script--title">
-                                        <h2>Lifetime free transaction</h2>
-                                    </div>
-                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
-                                </div>
-                            </div>
+
                             <!-- slide 1 -->
                             <div class="slide">
                                 <div class="slide__img">
@@ -291,50 +301,14 @@
                                     <p class="text--grey">Add new, trending and rare artwork to your collection</p>
                                 </div>
                             </div>
-                            <!-- slide 1 first-clone-->
-                            <div class="slide" id="first-clone">
+                            <!-- slide 1 -->
+                            <div class="slide">
                                 <div class="slide__img">
                                     <img src="./resource/img/choose_icon01.svg" alt="">
                                 </div>
                                 <div class="slide__script">
                                     <div class="slide__script--title">
                                         <h2>Lifetime free transaction</h2>
-                                    </div>
-                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
-                                </div>
-                            </div>
-                            <!-- slide 2 -->
-                            <div class="slide">
-                                <div class="slide__img">
-                                    <img src="./resource/img/choose_icon02.svg" alt="">
-                                </div>
-                                <div class="slide__script">
-                                    <div class="slide__script--title">
-                                        <h2>Protect the indentity</h2>
-                                    </div>
-                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
-                                </div>
-                            </div>
-                            <!-- slide 3 -->
-                            <div class="slide">
-                                <div class="slide__img">
-                                    <img src="./resource/img/choose_icon03.svg" alt="">
-                                </div>
-                                <div class="slide__script">
-                                    <div class="slide__script--title">
-                                        <h2>Sercurity & control over money</h2>
-                                    </div>
-                                    <p class="text--grey">Add new, trending and rare artwork to your collection</p>
-                                </div>
-                            </div>
-                            <!-- slide 4 -->
-                            <div class="slide">
-                                <div class="slide__img">
-                                    <img src="./resource/img/choose_icon04.svg" alt="">
-                                </div>
-                                <div class="slide__script">
-                                    <div class="slide__script--title">
-                                        <h2>Mobile payment make easy</h2>
                                     </div>
                                     <p class="text--grey">Add new, trending and rare artwork to your collection</p>
                                 </div>
@@ -372,7 +346,7 @@
                             easy to purchase and sell their tokens
                         </p>
                         <div class="btn">
-                            <a href="" class="btn__content btn--blue btn--small">BUY NOW</a>
+                            <a href="" class="btn__content btn--blue btn--small" style="border: unset;">BUY NOW</a>
                         </div>
 
                     </div>

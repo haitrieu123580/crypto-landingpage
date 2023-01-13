@@ -51,11 +51,11 @@
    
 }
 #sales .btn:hover .btn__content {
-    border: none;
-    color: white
+    color: white;
 }
 .btn--blue{
     background-color: var(--color-blue);
+    /* border: transparent; */
 }
 /* tabs  */
 .tab__title{
