@@ -91,6 +91,20 @@
     left: -9px;
     top: 0;
 }
+/* tao vien cho dot */
+.map__item--content .dot::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+    background-color: var(--color-blue);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+/* // */
 .map__item--content::before{
     content: "";
     position: absolute;
@@ -122,7 +136,7 @@
     bottom: 0;
 }
 .map__item:nth-child(even) .map__item--content{
-    padding: 0 0 110px 17px;
+    padding: 0 0 120px 17px;
 }
 /*  */
 .map__item:nth-child(2) .map__item--title{
@@ -144,19 +158,19 @@
     color: var(--color--pink);
 }
 
-.map__item:nth-child(2) .map__item--content::before, .map__item:nth-child(2) .dot::after{
+.map__item:nth-child(2) .map__item--content::before, .map__item:nth-child(2) .dot::after,.map__item:nth-child(2) .dot::before{
     background-color: var(--color--pink);
 }
-.map__item:nth-child(3) .map__item--content::before,.map__item:nth-child(3) .dot::after{
+.map__item:nth-child(3) .map__item--content::before,.map__item:nth-child(3) .dot::after,.map__item:nth-child(3) .dot::before{
     background-color: var(--color-yellow);
 }
-.map__item:nth-child(4) .map__item--content::before,.map__item:nth-child(4) .dot::after{
+.map__item:nth-child(4) .map__item--content::before,.map__item:nth-child(4) .dot::after,.map__item:nth-child(4) .dot::before{
     background-color: var(--color-green);
 }
-.map__item:nth-child(5) .map__item--content::before,.map__item:nth-child(5) .dot::after{
+.map__item:nth-child(5) .map__item--content::before,.map__item:nth-child(5) .dot::after,.map__item:nth-child(5) .dot::before{
     background-color: #007FF4;
 }
-.map__item:nth-child(6) .map__item--content::before,.map__item:nth-child(6) .dot::after{
+.map__item:nth-child(6) .map__item--content::before,.map__item:nth-child(6) .dot::after,.map__item:nth-child(6) .dot::before{
     background-color: var(--color-yellow);
 }
 .map__item:nth-child(7) .map__item--content::before,.map__item:nth-child(7) .dot::after{
@@ -172,12 +186,18 @@
 
 #style-6::-webkit-scrollbar
 {
+   
 	height: 5px;
 }
 
 #style-6::-webkit-scrollbar-thumb
 {
+    transition: 0.7s;
 	background-color: var(--color-grey);	
+}
+#style-6::-webkit-scrollbar-thumb:hover
+{
+	background-color: var(--color-blue);	
 }
 /* roadmap document */
 .doc__col{

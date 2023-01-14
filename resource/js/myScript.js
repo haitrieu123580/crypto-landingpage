@@ -27,14 +27,13 @@ function hideMobileMenu(){
     menu__background.classList.remove("visible");
 }
 // show submenu mobile
-let linkDownBtns = document.querySelectorAll(".btnSubmenu");
+let btnSubmenu = document.querySelectorAll(".btnSubmenu");
 function sidebarLiDown(){
-    for(let linkDownBtn of linkDownBtns){
-        linkDownBtn.onclick=(e)=>{
-            let includeLinkDown = e.target.parentElement.parentElement;
-            let ul = includeLinkDown.querySelector(".submenu--vertical")
-            ul.classList.toggle("showNav");
-            linkDownBtn.classList.toggle("rotateUp");
+    for(let btn of btnSubmenu){
+      btn.onclick=(e)=>{
+            let menuHasChild = e.target.parentElement.parentElement;
+            menuHasChild.classList.toggle("showNav");
+            btnSubmenu.classList.toggle("rotateUp");
         }
     }
 }
@@ -77,6 +76,7 @@ function selectTab1(){
   document.querySelector(".tab2").style.display = "none";
   // tab1.style.opacity = "1";
 }
+
 function selectTab2(){
   let tab2 = document.querySelector("#tab2__name");
   let tab1 = document.querySelector("#tab1__name");

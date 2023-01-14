@@ -44,6 +44,9 @@
         min-width: 50%;
         /* margin: 0 5px; */
     }
+    #bar{
+        width:25%
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

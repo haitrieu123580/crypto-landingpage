@@ -20,7 +20,7 @@
     el.style.transition = '1s';
     el.style.transform  = `translateX(${-mov}px)`;
     //cong width cho bar
-    ba.style.transition = '1s';
+    ba.style.transition = '1s'; 
     ba.style.width =`${width*index}px`;
     });
 

@@ -40,13 +40,15 @@
 }
 
 .team__social {
+    justify-content: center;
     padding-bottom: 0;
 }
 
 .team__social-link {
     border: none;
     margin: 0 0;
-
+    padding: 0;
+    max-width: 30px;
 }
 
 .member {
@@ -101,6 +103,10 @@
         transform: rotate(360deg);
     }
 }
+.member__position{
+    line-height: 3;
+}
+
 .team__social .social__link:hover{
     background-color: unset;
 }
