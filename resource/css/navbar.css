@@ -361,10 +361,11 @@ a {
     opacity: 0.8;
     visibility: visible;
 }
-/* submenu in mobile menu */
+/* *submenu in mobile menu */
 .menu-item-has-children{
-    height: none;
+    height: 45px;
     transition: all ease 0.4s;
+    overflow: hidden;
 }
 
 .vertical-menu>li{
@@ -399,14 +400,7 @@ a {
     top: 45px;
     display: block;
     width: 100%;
-    opacity: 0;
-    /* display: none; */
     transition:  all ease 0.4s;
-}
-.showNav .submenu--vertical{
-    
-    opacity: 1;
-    /* transition-delay: 0.1s; */
 }
 .submenu--vertical li{
     display: block;
@@ -429,16 +423,3 @@ a {
 .menu-item-has-children.showNav{
     height: 135px;
 }
-/* @keyframes dropDown {
-    0%{
-        transform:translateY(-5px);
-        visibility: visible;
-        opacity:0;
-    }
-    100%{
-        visibility: visible;
-        transform:translateY(0);
-        opacity:1;
-    }
-} */
-
