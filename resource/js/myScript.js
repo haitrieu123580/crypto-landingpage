@@ -1,4 +1,11 @@
-
+// make loading
+const loader = document.getElementById("loader")
+function loadingPage(){
+    setTimeout(showPage,2000)
+}
+function showPage(){
+  loader.style.display = "none"
+}
 const li = document.querySelectorAll(".link");
 const sec = document.querySelectorAll("section");
 
@@ -18,6 +25,8 @@ function showMobileMenu(){
     menu__mobile.style.display = "inline-block";
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.add("visible");
+    let timeIcon =  document.querySelector(".fa-times");
+    timeIcon.classList.add("spin")
 }
 function hideMobileMenu(){
     let menu__mobile = document.querySelector(".menu__mobile");
@@ -25,6 +34,8 @@ function hideMobileMenu(){
     let body = document.querySelector("body");
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.remove("visible");
+    let timeIcon =  document.querySelector(".fa-times");
+    timeIcon.classList.remove("spin")
 }
 // show submenu mobile
 let btnSubmenu = document.querySelectorAll(".btnSubmenu");

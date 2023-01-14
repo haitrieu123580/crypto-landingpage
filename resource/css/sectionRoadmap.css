@@ -202,6 +202,7 @@
 /* roadmap document */
 .doc__col{
     padding: 0 50px;
+    margin-bottom: 0;
 }
 .doc__title .title{
     margin: 0;

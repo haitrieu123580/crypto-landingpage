@@ -289,10 +289,14 @@ a {
 
 }
 
-.vertical-menu__logo i {
+.vertical-menu__logo .fa-times{
     font-size: 30px;
     text-align: center;
     padding: 10px;
+    transition: all 1s;
+}
+.spin{
+    transform: rotate(360deg);
 }
 
 .vertical__list {

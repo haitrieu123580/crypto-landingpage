@@ -12,6 +12,9 @@
         flex-direction: column;
         justify-content: start;
     }
+    .document__row{
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -29,6 +32,9 @@
     .chart__details{
         flex-direction: row;
     }
+    .document__row{
+        flex-direction: column-reverse;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -44,6 +50,9 @@
     #sales .col{
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .document__row{
+        flex-direction: row;
     }
 }
 

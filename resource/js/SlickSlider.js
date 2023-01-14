@@ -25,8 +25,9 @@
     });
 
   let index = 0;
+  let isRunning = true
 
-  while (true) // infinite carrousel loop
+  while (isRunning) // infinite carrousel loop
     {
     await delay( interval )
     await movLeft( slidesWrapper, slides[index].clientWidth + paddingRight,bar,barWidth)
@@ -35,4 +36,7 @@
     slidesWrapper.style.transform    = `translateX(0)` // rest translateX
     index = ++index % slides.length
     }
-  })()
+
+  }
+
+  )()
