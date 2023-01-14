@@ -9,18 +9,18 @@
     height: 100%;
 }
 .spinner{
-    width: 5rem;
-    height: 4rem;
+    width: 100px;
+    height: 80px;
     text-align: center;
     font-size: 1rem;
-    margin: 10rem auto;
+    margin:auto;
 }
 .rect{
     background-color: var(--color-blue);
     height: 100%;
-    width: 0.6rem;
+    width: 8px;
     display: inline-block;
-    animation: strectchDelay 1.2s infinite ease-in-out;
+    animation: stretch 1.2s infinite ease-in-out;
 }
 .spinner .rect2{
     animation-delay: -1.1s;
@@ -34,7 +34,7 @@
 .spinner .rect5{
     animation-delay: -0.8s;
 }
-@keyframes strectchDelay {
+@keyframes stretch{
     0%,40%,100%{
         transform: scaleY(0.4);
     }
@@ -73,16 +73,10 @@ section{
 html,body {
     scroll-behavior: smooth;
 }
-.activeSection {
-    /* transition: 0.4s; */
-    border-bottom: 3px solid #00c4f4;
-}
-
 .btn {
     width: 100%;
     position: relative;
 }
-
 .btn__content {
     user-select: none;
     -moz-user-select: none;
@@ -327,4 +321,7 @@ section{
     transform: translateY(0);
     visibility: visible;
     opacity: 1;
+}
+i{
+    cursor: pointer;
 }

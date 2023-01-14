@@ -147,7 +147,10 @@ a {
     transform: scaleX(1);
     transform-origin: 0% 50%;
 }
-
+.navigation .activeSection.link:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
 
 /* **language list */
 .menu__action ul {
@@ -225,7 +228,6 @@ a {
 }
 
 .lang__list a:hover {
-
     color: #00c4f4;
 }
 

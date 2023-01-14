@@ -127,9 +127,15 @@
  margin-top: 185px;
 }
 .map__item:nth-child(even){
+    margin-top: 10px;
     display: flex;
     align-self: flex-start;
     flex-direction: column-reverse;
+    justify-content: center;
+    /* align-items: center; */
+}
+.map__item:nth-child(even) .map__item--title{
+    line-height: 3;
 }
 .map__item:nth-child(even) .map__item--content .dot{
     top: auto;

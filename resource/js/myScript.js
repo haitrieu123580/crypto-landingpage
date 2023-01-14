@@ -14,7 +14,9 @@ function activateMenu(){
     
     while(--len && window.scrollY+90< sec[len].offsetTop){}
     li.forEach(ltx=>ltx.classList.remove("activeSection"));
-    li[len].classList.add("activeSection");
+    if(len!=4){
+      li[len].classList.add("activeSection");
+    }
 }
 activateMenu();
 window.addEventListener("scroll",activateMenu);
