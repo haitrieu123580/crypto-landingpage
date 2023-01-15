@@ -273,9 +273,7 @@ a {
     position: fixed;
     top: 0;
     right: 0;
-    /* right:-400px; */
-    /* visibility: hidden;
-    opacity: 0; */
+    overflow-y: scroll;
     height: 100%;
     transition: all 0.7s;
     z-index: 11113;
