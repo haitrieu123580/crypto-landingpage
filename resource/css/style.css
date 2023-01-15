@@ -8,6 +8,9 @@
     width: 100%;
     height: 100%;
 }
+.overflowHidden{
+    overflow: hidden;
+}
 .spinner{
     width: 100px;
     height: 80px;

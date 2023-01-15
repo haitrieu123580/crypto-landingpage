@@ -417,7 +417,7 @@ a {
 }
 /* css when click btnSubmenu */
 .btnSubmenu.rotateUp{
-    transform: rotate(90deg);
+    transform: rotate(90deg)
 }
 
 .menu-item-has-children.showNav{

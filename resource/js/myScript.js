@@ -29,15 +29,18 @@ function showMobileMenu(){
     menu__background.classList.add("visible");
     let timeIcon =  document.querySelector(".fa-times");
     timeIcon.classList.add("spin")
+    let body = document.querySelector("body")
+    body.classList.add("overflowHidden")
 }
 function hideMobileMenu(){
     let menu__mobile = document.querySelector(".menu__mobile");
     menu__mobile.style.transform= "translateX(101%)";
-    let body = document.querySelector("body");
     let menu__background = document.querySelector(".menu__background");
     menu__background.classList.remove("visible");
     let timeIcon =  document.querySelector(".fa-times");
     timeIcon.classList.remove("spin")
+    let body = document.querySelector("body")
+    body.classList.remove("overflowHidden")
 }
 // show submenu mobile
 let btnSubmenu = document.querySelectorAll(".btnSubmenu");
@@ -46,7 +49,7 @@ function sidebarLiDown(){
       btn.onclick=(e)=>{
             let menuHasChild = e.target.parentElement.parentElement;
             menuHasChild.classList.toggle("showNav");
-            btnSubmenu.classList.toggle("rotateUp");
+            btn.classList.toggle("rotateUp");            
         }
     }
 }
